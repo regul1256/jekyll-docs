@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>View tags - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "View tags", url: "#_top", children: [
+              {title: "Overview", url: "#overview" },
+              {title: "Bars and their contents", url: "#bars-and-their-contents" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../Projects_view_alarms/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../Projects_view_alarms/" class="btn btn-xs btn-link">
+        View alarms
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Projects_docs/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Projects_docs/" class="btn btn-xs btn-link">
+        Project documents
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="view-tags">View tags<a class="headerlink" href="#view-tags" title="Permanent link">#</a></h1>
+<p>This article is about the View tags menu that provides users with tools for working with tags.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
+<p>The <strong>View tags</strong> menu is a list of available devices, folders, tags and virtual tags. You can do the following in the View tags menu:</p>
+<ol>
+<li>Manage permissions for tags and virtual tags</li>
+<li>Edit single or multiple tags</li>
+<li>Edit settings of devices</li>
+<li>Copy tag ids</li>
+<li>Create devices and folders</li>
+<li>Export/import devices and tags</li>
+<li>Delete devices, tags, virtual tags and folders</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The set of available actions depends on your user permissions defined by your Portal user-srole. </p>
+</div>
+<p>The image below demonstrates the View tags menu. You can see a list of devices and folders that contain tags. There is a Filter field above it where you can search tag, folder, or device. By clicking checkboxes to the left from list items, you can pick them. Click the box on top to choose all available objects. </p>
+<figure>
+    <img src="../images/view_tags.png" alt="view_tags.png">
+    <figcaption><b>Figure 1.</b> View tags menu</figcaption>
+</figure>
+
+<p>Each item of the list has the options button on the right <img alt="options1.png" src="../images/options1.png" />. You can rename and delete objects. In the case of devices, there is the Settings option  that redirects you to the device editor. Tags and virtual tags have the following alternatives: </p>
+<ul>
+<li>Manage permissions</li>
+<li>Rename </li>
+<li>Copy tag ID</li>
+<li>Delete</li>
+</ul>
+<h2 id="bars-and-their-contents">Bars and their contents<a class="headerlink" href="#bars-and-their-contents" title="Permanent link">#</a></h2>
+<p>There is a bar to the left from the box that contains several actions. It contains the following operations: </p>
+<ul>
+<li>
+<p><strong>Manage permissions</strong><br>
+    Invokes a menu where you can override permissions for chosen tags. </p>
+</li>
+<li>
+<p><strong>Copy tags IDs</strong><br>
+    Copies IDs of chosen tags. </p>
+</li>
+<li>
+<p><strong>Mass edit Modbus TCP tag</strong><br>
+    Opens the <em>Mass modbus tcp tags editor</em>.</p>
+</li>
+<li>
+<p><strong>Mass edit BACnet tag</strong><br>
+    Opens the <em>Mass BACnet tags editor</em>.</p>
+</li>
+<li>
+<p><strong>Mass edit Virtual tag</strong><br>
+    Opens the <em>Mass Virtual tags editor</em>.</p>
+</li>
+</ul>
+<p>By default, each button is grey. When tags are marked, buttons with possible actions become blue. The figure below shows an example. </p>
+<figure>
+    <img src="../images/actions-view-tags.png" alt="actions-view-tags.png">
+    <figcaption><b>Figure 2.</b> Possible actions</figcaption>
+</figure>
+
+<p>A set of buttons in the header contains tools for export and import of devices and tags, device and virtual tag editors of different types.   </p>
+<figure>
+    <img src="../images/head-view-tags.png" alt="head-view-tags.png">
+    <figcaption><b>Figure 3.</b> Header Toolbar</figcaption>
+</figure>
+
+<p>The following table will give you short explanations on each button's function:</p>
+<table>
+    <caption><b>Table 1.</b> Header Toolbar contents</caption>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Icon</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Export devices</td>
+            <td><img src="../images/exportd.png"></td>
+            <td>Downloads a .csv file with project devices</td>
+        </tr>   
+        <tr>
+            <td>Import devices</td>
+            <td><img src="../images/importd.png"></td>
+            <td>Uploads a .csv file with devices</td>
+        </tr>
+        <tr>
+            <td>Export tags</td>
+            <td><img src="../images/exporttag.png"/></td>
+            <td>Downloads a .csv file with project tags</td>
+        </tr>
+        <tr>
+            <td>Import tags</td>
+            <td><img src="../images/importtag.png"/></td>
+            <td>Uploads a .csv file with tags</td>
+        </tr>
+        <tr>
+            <td>Create Modbus device</td>
+            <td><img src="../images/moddev.png"></td>
+            <td>Opens the Modbus device editor</td>
+        </tr>
+        <tr>
+            <td>Create BACnet device</td>
+            <td><img src="../images/bacdev.png "/></td>
+            <td>Opens the BACnet editor</td>
+        </tr>
+        <tr>
+            <td>Create OPC UA device</td>
+            <td><img src="../images/opcdev.png"></td>
+            <td>Opens the OPC UA device editor</td>
+        </tr>
+        <tr>
+            <td>Create Z-Wave device</td>
+            <td><img src="../images/zdev.png"></td>
+            <td>Opens the Z-Wave device editor</td>
+        </tr>
+        <tr>
+            <td>Create Virtual Tag</td>
+            <td><img src="../images/vt.png"></td>
+            <td>Opens the Virtual Tag editor</td>
+        </tr>
+        <tr>
+            <td>Create Regulator tag</td>
+            <td><img src="../images/curve.png"></td>
+            <td>Opens the Regulator tag editor</td>
+        </tr>
+        <tr>
+            <td>Create Generator tag</td>
+            <td><img src="../images/generator.png"></td>
+            <td>Opens the Generator tag editor</td>
+        </tr>
+        <tr>
+            <td>Create new folder</td>
+            <td><img src="../images/nfolder.png"/></td>
+            <td>Creates a new folder</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="tag-permissions">Tag permissions<a class="headerlink" href="#tag-permissions" title="Permanent link">#</a></h3>
+<p>You can manage other users' ability to change values of writable tags in <strong>HMI View</strong> in the <strong>Manage permissions</strong> menu. There is a list of project users in the menu. You can appoint one of three permissions to each user:</p>
+<ol>
+<li><strong>None</strong><br>
+A user can work with the tag in accordance with the user role</li>
+<li><strong>Allow</strong><br>
+A user can change the tag value regardless of the user role</li>
+<li><strong>Forbid</strong><br>
+A user can not change the tag value regardless of the user role</li>
+</ol>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../Portal_projects/">Portal Projects</a></strong><br>
+Brief information about the Projects section.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../../4-IDE/tags/">Tags</a></strong><br>
+You can read about settings of tags and alarms in this article.</li>
+<li><strong><a href="../../4-IDE/tag_gen_settings/">Tag general settings</a></strong><br>
+In this article, you can find short descriptions of tag general settings.</li>
+<li><strong><a href="../../4-IDE/history_set/">Tag history settings</a></strong><br>
+Briefly about History settings menu.</li>
+<li><strong><a href="../../4-IDE/modbus_ed/">Modbus TCP tag editor</a></strong><br>
+This article is about Modbus TCP tags and their parameters which you can edit in the editor.</li>
+<li><strong><a href="../../4-IDE/BACnet_ed/">BACnet tag editor</a></strong><br>
+Overview of BACnet tag settings. </li>
+<li><strong><a href="../../4-IDE/vt_ed/">Virtual tag editor</a></strong><br>
+Editing virtual tags.</li>
+<li><strong><a href="../../4-IDE/reg_ed/">Regulator tag editor</a></strong><br>
+In this article, you will find information about Regulator tag editor and its parameters.</li>
+<li><strong><a href="../../4-IDE/gen_ed/">Generator tag editor</a></strong><br>
+What is a generator tag and what settings does it have.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../Projects_view_alarms/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../Projects_view_alarms/" class="btn btn-xs btn-link">
+        View alarms
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Projects_docs/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Projects_docs/" class="btn btn-xs btn-link">
+        Project documents
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

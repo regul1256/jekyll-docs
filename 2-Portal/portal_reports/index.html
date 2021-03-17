@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Portal Reports - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Portal Reports", url: "#_top", children: [
+              {title: "Section overview", url: "#section-overview" },
+              {title: "Creating a report", url: "#creating-a-report" },
+              {title: "Report views", url: "#report-views" },
+              {title: "Sharing and subscribing for reports", url: "#sharing-and-subscribing-for-reports" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../4-IDE/IDE_main/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../4-IDE/IDE_main/" class="btn btn-xs btn-link">
+        ControlMachines™ IDE
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Portal_alarms/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Portal_alarms/" class="btn btn-xs btn-link">
+        Monitoring alarms
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="portal-reports">Portal Reports<a class="headerlink" href="#portal-reports" title="Permanent link">#</a></h1>
+<p>This article is about the Portal's Reports section. </p>
+<h2 id="section-overview">Section overview<a class="headerlink" href="#section-overview" title="Permanent link">#</a></h2>
+<p>The Reports section contains interactive documents which visualise performances of one or several projects. See the section view is in the figure below.</p>
+<figure>
+    <img src="../images/reports-section-view.png" alt="reports-section-view.png">
+    <figcaption><b>Figure 1.</b> Reports section view</figcaption>
+</figure>
+
+<p><strong>Reports</strong> consists of two tabs: </p>
+<ol>
+<li><strong>REPORTS</strong></li>
+<li><strong>SHARED REPORTS</strong></li>
+</ol>
+<p>The first tab contains reports that you have created. The second tab contains reports that other Portal users have shared with you.</p>
+<p>You can create reports and folders by clicking correspondent buttons in the upper right corner <img alt="nfolder.png" src="../images/nfolder.png" />, <img alt="nreport.png" src="../images/nreport1.png" /> of the <strong>REPORTS</strong> tab. If you want to rename or remove a report, click the options button <img alt="more.png" src="../images/more.png" /> on the right. Also, you can delete multiple items. Click checkboxes to the left of each item you need to remove or select all by clicking the box on top.</p>
+<h2 id="creating-a-report">Creating a report<a class="headerlink" href="#creating-a-report" title="Permanent link">#</a></h2>
+<p>After clicking the button, you get to the report editor menu where you have to set its name and content.  </p>
+<figure>
+    <img src="../images/nrepmenu.png" alt="nrepmenu.png">
+    <figcaption><b>Figure 2.</b> New report</figcaption>
+</figure>
+
+<p>The <strong>Report name</strong> setting is obligatory. It cannot stay empty. Otherwise, you would not be able to save the changes. You can put short text into the <strong>Description</strong> field. </p>
+<p>You can organise tags and projects into groups. There is a default group when entering the report editor menu. You can add and remove objects to the group by clickin the <strong>Add project</strong> button. </p>
+<h3 id="groups">Groups<a class="headerlink" href="#groups" title="Permanent link">#</a></h3>
+<p>Click the button <strong>Options</strong> <img alt="options.png" src="../images/options.png" /> to see available actions: </p>
+<ul>
+<li>Create new group</li>
+<li>Edit group </li>
+<li>Duplicate group</li>
+<li>Delete group</li>
+</ul>
+<p>Whenever you choose <strong>Create new group</strong> or <strong>Edit group</strong> options, you get to the <strong>Group settings</strong> menu. The difference is that the first case you set parameters for a new group. And in the second, you change the existing group. </p>
+<figure>
+    <img src="../images/grset.png" alt="grset.png">
+    <figcaption><b>Figure 3.</b> Group settings menu</figcaption>
+</figure>
+
+<p>In the Group settings menu, you can set the name of the group, write a <strong>description</strong> which will appear in the <strong>chart view</strong>, and choose between line and bar chart types. </p>
+<h3 id="adding-tags">Adding tags<a class="headerlink" href="#adding-tags" title="Permanent link">#</a></h3>
+<p>There are two ways of adding tags to the group: </p>
+<ol>
+<li>From a page </li>
+<li>From the list. </li>
+</ol>
+<p>To add tags from a page, click <strong>Select tags from page</strong>, choose the needed page in the menu, and pick tags from the page image. </p>
+<p>To add tags from the list, click the <strong>Select tags from list</strong> button <img alt="seltags.png" src="../images/seltags.png" />. There will appear the list of tags from all the projects that have been added to the group.</p>
+<figure>
+    <img src="../images/taglist.png" alt="taglist.png">
+    <figcaption><b>Figure 4.</b> List of tags</figcaption>
+</figure>
+
+<p>You can search tags in the <strong>Filter</strong> field. </p>
+<h2 id="report-views">Report views<a class="headerlink" href="#report-views" title="Permanent link">#</a></h2>
+<p>There are three available ways of report displaying:</p>
+<ol>
+<li><strong>Groups</strong><br>
+Groups and tags which have been picked to a report.</li>
+<li><strong>Chart</strong><br>
+Visual presentation of tag values.</li>
+<li><strong>Table</strong><br>
+Table presentation of tag values.</li>
+</ol>
+<h2 id="sharing-and-subscribing-for-reports">Sharing and subscribing for reports<a class="headerlink" href="#sharing-and-subscribing-for-reports" title="Permanent link">#</a></h2>
+<p>You can share reports with other Portal users and external readers. Click <strong>Share</strong> <img alt="" src="../images/compShareButton.png" /> to open the menu. </p>
+<p>The <strong>Share Report</strong> menu consists of two tabs: </p>
+<ol>
+<li>USERS</li>
+<li>LINK</li>
+</ol>
+<p>The first tab allows specifying emails of Portal users that can have access to the report. You can grant a user the <strong>READ</strong> access mode and the <strong>WRITE</strong> access mode. </p>
+<p>The <strong>READ</strong> mode allows only reading of the report. Users with the <strong>WRITE</strong> credentials can edit, rename, and delete the report as if they created it. </p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Users with whom you want to share a report should have at least the <a href="../Projects_perm/"><strong>Viewer</strong></a> role in projects included in the report. </p>
+</div>
+<p>You can see an example of the <strong>USERS</strong> tab in the figure below. </p>
+<figure>
+    <img src="../images/share-perm.png" alt="share-perm.png">
+    <figcaption><b>Figure 5.</b> The <b>USERS</b> tab</figcaption>
+</figure>
+
+<p>It is possible to share a link for a report by clicking the <strong>Share Report</strong> <img alt="" src="../images/compShareButton.png" /> button. You can share links to the report with an external information consumer that has not been registered as ControlMachines™ HMI user. In the <strong>Share Report</strong> menu, you can set the following parameters: </p>
+<ul>
+<li><strong>Include project names</strong><br>
+Set whether to display project names in a shared report</li>
+<li><strong>The active period of the link is</strong><br>
+Choose the period for a link to be active. Possible options are 1 day, 1 week, 1 month, 3 months, 1 year, forever</li>
+</ul>
+<p>See the Share Report menu in the following figure. </p>
+<figure>
+    <img src="../images/share-report.png" alt="taglist.png">
+    <figcaption><b>Figure 6.</b> Share Report menu</figcaption>
+</figure>
+
+<p>You can manage the links you shared in your user profile. Go <strong>VIEW PROFILE</strong> &gt;&gt; <strong>SHARED REPORT LINKS</strong> to see active links. </p>
+<p>Click the <strong>Subscribe</strong> <img alt="" src="../images/subscribe.png" /> button to set report subscription parameters. To edit the subscription parameters or delete the subscription, go <strong>VIEW PROFILE</strong> &gt;&gt; <strong>SUBSCRIPTIONS</strong>. </p>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../Portal_main/">ControlMachines™ HMI Portal</a></strong><br>
+This article contains general information about ControlMachines™ HMI Portal, its features, and interface.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../4-IDE/IDE_main/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../4-IDE/IDE_main/" class="btn btn-xs btn-link">
+        ControlMachines™ IDE
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Portal_alarms/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Portal_alarms/" class="btn btn-xs btn-link">
+        Monitoring alarms
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>MQTT devices - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "MQTT devices", url: "#_top", children: [
+              {title: "Parameters of MQTT devices", url: "#parameters-of-mqtt-devices" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../tags/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../tags/" class="btn btn-xs btn-link">
+        Briefly about tags
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../opc_dev/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../opc_dev/" class="btn btn-xs btn-link">
+        OPC UA devices
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="mqtt-devices">MQTT devices<a class="headerlink" href="#mqtt-devices" title="Permanent link">#</a></h1>
+<p>Create and configure MQTT devices.</p>
+<p>Click the <strong>New MQTT Device</strong> icon in the <strong>View tags</strong> menu to create a new MQTT device.  For editing an existing device, you can either click the button <strong>More options</strong> and choose <strong>Settings</strong>, or to enter the device, and click the settings icon in the header.  </p>
+<h2 id="parameters-of-mqtt-devices">Parameters of MQTT devices<a class="headerlink" href="#parameters-of-mqtt-devices" title="Permanent link">#</a></h2>
+<p>MQTT devices have the following parameters. </p>
+<ul>
+<li><strong>Name</strong><br>
+This parameter defines the device name.  </li>
+<li><strong>Address</strong><br>
+This parameter defines the device's unique name in the network. </li>
+<li><strong>Broker</strong><br>
+This set of parameters defines the MQTT Broker.</li>
+<li><strong>Data encryption</strong><br>
+These parameters are responsible for data encryption settings. </li>
+<li><strong>Health check</strong><br>
+These parameters define connection control with the MQTT device.</li>
+<li><strong>Confirm receiving data</strong><br>
+This parameter defines whether the server must send confirmation to the MQTT device about receiving data.</li>
+<li><strong>Enabled</strong><br>
+This parameter is responsible for turning on and off the MQTT device.</li>
+</ul>
+<p>The section <strong>Broker</strong> contains parameters of connection with the MQTT Broker. Put the broker's address in the <strong>URL</strong> field. Fields <strong>User name</strong> and <strong>Password</strong> are responsible for authentication. Activate the <strong>Retained</strong> flag to turn the <a href="https://www.hivemq.com/blog/mqtt-essentials-part-8-retained-messages/">Retained Messages</a> mechanism. The <strong>Quality of service</strong> parameter defines the way of delivering messages: </p>
+<ol>
+<li><strong>At most once</strong><br>
+The message is going to be delivered not more than one time. If the subscriber is unable to receive the message, the latter is lost.</li>
+<li><strong>At least once</strong><br>
+The message is going to be delivered not less than one time. There is a possibility of delivering the message several times. </li>
+<li><strong>Exactly once</strong><br>
+The message is going to be delivered exactly once. </li>
+</ol>
+<p>The section <strong>Data encryption</strong> allows you to encrypt the data. Activate the <strong>Enable encryption</strong> flag to turn on the mode. Choose one of two encryption algorithms in the <strong>Algorithm</strong> field. Set the <em>key</em> and <em>initialization vector</em> in the same-named fields. You can create new ones by clicking the <strong>GENERATE</strong> button.  </p>
+<p><strong>Health check</strong> allows setting connection control requests. The <strong>Period</strong> parameter defines the frequency of connection requests, and the <strong>Timeout</strong> parameter specifies waiting time.   </p>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../IDE_main/">IDE overview</a></strong><br>
+An overview of ControlMachines™ HMI project development component.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../mqtt-tag/">MQTT tag editor</a></strong><br>
+Create and edit MQTT tags with the MQTT tag editor.</li>
+</ul>
+<p><strong>External sources</strong></p>
+<ul>
+<li><strong><a href="https://mqtt.org/">MQTT: The Standard for IoT Messaging</a></strong></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../tags/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../tags/" class="btn btn-xs btn-link">
+        Briefly about tags
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../opc_dev/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../opc_dev/" class="btn btn-xs btn-link">
+        OPC UA devices
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

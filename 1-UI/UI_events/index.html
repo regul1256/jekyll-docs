@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Logs - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Logs", url: "#_top", children: [
+              {title: "Alarm Log and Audit Log", url: "#alarm-log-and-audit-log" },
+              {title: "Searching in Logs", url: "#searching-in-logs" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_documents/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_documents/" class="btn btn-xs btn-link">
+        Documents
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_trends_review/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_trends_review/" class="btn btn-xs btn-link">
+        Trends
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="logs">Logs<a class="headerlink" href="#logs" title="Permanent link">#</a></h1>
+<p>Logs contain records about events that took place in a project. </p>
+<h2 id="alarm-log-and-audit-log">Alarm Log and Audit Log<a class="headerlink" href="#alarm-log-and-audit-log" title="Permanent link">#</a></h2>
+<p>There are two types of logs: </p>
+<ol>
+<li>Alarm Log</li>
+<li>Audit Log</li>
+</ol>
+<p>You can switch between the two in <strong>Left Pane</strong>.</p>
+<p><strong>Alarm Log</strong> contains records about events related to system alarms and project alarms. It includes: </p>
+<ul>
+<li>Alarm activations and deactivations</li>
+<li>User actions with alarms</li>
+</ul>
+<p>There are various filters on the Alarm Log tab, you can find them in <strong>Left Pane</strong>. </p>
+<p><strong>Audit Log</strong> contains the following events:</p>
+<ul>
+<li>Logging in and out</li>
+<li>Updating tag values</li>
+<li>Commenting and editing comments</li>
+</ul>
+<p>You can export logged events. Click <strong>Export</strong> button <img alt="ExportButton.png" src="../images/ExportButton.png" /> to download .CSV file.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Audit Log</strong> and <strong>Alarm Log</strong> are exported separately.</p>
+</div>
+<p>In this article you can find information about schedulers and what scheduler menu contains</p>
+<h2 id="searching-in-logs">Searching in Logs<a class="headerlink" href="#searching-in-logs" title="Permanent link">#</a></h2>
+<p>You can create expression-like queries to make search more detailed. Use special words and symbols to create search-expressions: </p>
+<ul>
+<li>Use <code>and</code> to create logical conjunctions. Another way to create a logical conjunction is to type the symbol <code>&amp;</code> in the body of your request.  </li>
+<li>Use <code>or</code> to create logical disjunctions or alternations. Another way to create a logical disjunction is to type the <em>vertical bar</em> symbol <code>|</code> in the query. Also, you can type the <em>plus</em> symbol: <code>+</code> to get the same result.</li>
+<li>Use <code>not</code> to create logical negations. Another way to create a logical disjunction is to type the <em>exclamation mark</em> symbol <code>!</code> in the query. Also, you can type the <em>minus</em> symbol: <code>-</code> to get the same result. </li>
+</ul>
+<p>You can search for items that start with certain symbols or end with certain symbols. Use the <em>asterisk</em> symbol <code>*</code> for these purposes. Put <code>*</code> in the end of a sequence of symbols to find items that start with that sequence. To find items that end with the sequence of symbols put <code>*</code> in the beginning of it. Also, you can search for items that start and end with certain symbols. Put <code>*</code> in the middle of the sequence as shown below: </p>
+<pre><code>a*n 
+</code></pre>
+
+<p>The example shows a query to find items that start with the letter <em>a</em> and end with the letter <em>n</em>. </p>
+<p>If you need to find items that contain single quotation marks, type the search request in double quotation marks. And vice versa. If you need to find items that contain double quotation marks, type the search request in single quotation marks. See examples below. </p>
+<pre><code>&quot;hello 'world'&quot;
+</code></pre>
+
+<p>The query above is to find the following phrase: <em>hello 'world'</em>. </p>
+<pre><code>'hello &quot;world&quot;'
+</code></pre>
+
+<p>And this query is to find phrase <em>hello "world"</em>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Queries are case sensitive.</p>
+</div>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../UI_main/">ControlMachines™ HMI View</a></strong><br>
+This article observes ControlMachines™ HMI View, here you can read about its structure and common elements.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_documents/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_documents/" class="btn btn-xs btn-link">
+        Documents
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_trends_review/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_trends_review/" class="btn btn-xs btn-link">
+        Trends
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

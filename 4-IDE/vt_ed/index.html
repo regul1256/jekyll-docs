@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Virtual tag editor - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Virtual tag editor", url: "#_top", children: [
+              {title: "Data settings", url: "#data-settings" },
+              {title: "Editing of multiple virtual tags", url: "#editing-of-multiple-virtual-tags" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../reg_ed/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../reg_ed/" class="btn btn-xs btn-link">
+        Regulator tag editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../mqtt-tag/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../mqtt-tag/" class="btn btn-xs btn-link">
+        MQTT tag editor
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="virtual-tag-editor">Virtual tag editor<a class="headerlink" href="#virtual-tag-editor" title="Permanent link">#</a></h1>
+<p>Editing virtual tags.</p>
+<p>To display the settings page, click a virtual tag you need in the <a href="../../2-Portal/Projects_view_tags/">View tags</a> menu. You will see the Data tab on the screen. </p>
+<figure>
+    <img src="../images/vt_ed.png" alt="Virtual tag settings page">
+    <figcaption><b>Figure 1.</b> Virtual tag settings page</figcaption>
+</figure>
+
+<p>You can enter the editing mode by clicking the <strong>edit</strong> button <img alt="" src="../images/ed_but.png" title="Editor view" /> in the header's right corner. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When editing an existing tag, you will see the current tag value in square brackets to the right from the tag name. </p>
+<p><img alt="" src="../images/cur_val.png" title="Current tag value" /> </p>
+</div>
+<h2 id="data-settings">Data settings<a class="headerlink" href="#data-settings" title="Permanent link">#</a></h2>
+<p>You can configure the following parameters: </p>
+<ul>
+<li><strong>Tag name</strong><br>
+This field is for virtual tag naming.</li>
+<li><strong>Description</strong><br>
+The user can put short text describing the virtual tag in this field.</li>
+<li><strong>Type</strong><br>
+The user can choose of three available options: Simple, Regulator link and Time channel.</li>
+<li><strong>Readable/Writable script</strong><br>
+You can create and edit expressions for tags in this field. </li>
+<li><strong>Update this tag using specified period</strong><br>
+This option defines how often the virtual tag value is going to change. This option is useful in the situations when the virtual tag changes its values excessively often. So, the user can set a longer updating period. As a result, the last change of the value is going to be displayed.</li>
+<li><strong>Enable write events logging</strong><br>
+This checkbox is relevant for <strong>writable virtual tags</strong>. Writable virtual tags may frequently write values into multiple tags. The option of registering each occurrence of writing is disabled by default to prevent the events log from overloading. If a log of writing the values is necessary, then a user can activate the checkbox.</li>
+</ul>
+<h2 id="editing-of-multiple-virtual-tags">Editing of multiple virtual tags<a class="headerlink" href="#editing-of-multiple-virtual-tags" title="Permanent link">#</a></h2>
+<p>There is an option to edit parameters of several virtual tags at once. You can choose needed tags and click the <strong>Mass edit virtual tags</strong> button in the action panel under the search field. </p>
+<figure>
+    <img src="../images/me_vt.png" alt="Picking virtual tags for editing">
+    <figcaption><b>Figure 2.</b> Picking virtual tags for editing</figcaption>
+</figure>
+
+<p>The <strong>Multiple virtual tags editor</strong> is a table with tags where you can change general parameters of tags except scripts, both readable and writable. </p>
+<figure>
+    <img src="../images/me_vt1.png" alt="Multiple virtual tags editor">
+    <figcaption><b>Figure 3.</b> Multiple virtual tags editor</figcaption>
+</figure>
+
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../IDE_main/">IDE</a></strong><br>
+An overview of ControlMachines™ HMI project development component.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../tag_gen_settings/">Tag general settings</a></strong><br>
+In this article, you can find short descriptions of tag general settings.</li>
+<li><strong><a href="../history_set/">Tag history settings</a></strong><br>
+Briefly about History settings menu.</li>
+<li><strong><a href="../../2-Portal/Projects_view_tags/">View tags</a></strong><br>
+This article is about the View tags menu that provides users with tools for working with tags.</li>
+</ul>
+<p><strong>Related task</strong>: </p>
+<ul>
+<li><strong><a href="5-Tasks/writable_scr.md">Use writable scripts</a></strong><br>
+This examples shows you how to create a virtual tag with the writable script.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../reg_ed/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../reg_ed/" class="btn btn-xs btn-link">
+        Regulator tag editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../mqtt-tag/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../mqtt-tag/" class="btn btn-xs btn-link">
+        MQTT tag editor
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
