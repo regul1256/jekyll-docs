@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Page Editor - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Page editor", url: "#_top", children: [
+              {title: "What is pages?", url: "#what-is-pages" },
+              {title: "Creating pages in the editor", url: "#creating-pages-in-the-editor" },
+              {title: "Interface overview", url: "#interface-overview" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../left-panel/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../left-panel/" class="btn btn-xs btn-link">
+        Left Panel
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tag_mass/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tag_mass/" class="btn btn-xs btn-link">
+        Generic tag editor
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="page-editor">Page editor<a class="headerlink" href="#page-editor" title="Permanent link">#</a></h1>
+<p>This article shortly tells about pages, page editor, and its interface. </p>
+<h2 id="what-is-pages">What is pages?<a class="headerlink" href="#what-is-pages" title="Permanent link">#</a></h2>
+<p>Pages are the main visual component of ControlMachines™ HMI. You can view pages both in HMI View and Portal. A typical page contains different elements that display information related to project functioning. It can be schemes, tables, images and many more. </p>
+<h2 id="creating-pages-in-the-editor">Creating pages in the editor<a class="headerlink" href="#creating-pages-in-the-editor" title="Permanent link">#</a></h2>
+<p>The Page editor is a part of ControlMachines™ HMI IDE that allows you to create and edit pages. 
+The editor is available in the <strong>View pages</strong> menu. Choose a page and click the edit button and start making changes. Click the button <strong>Create new page</strong> to start editing a new page.</p>
+<p>Place elements and configure their attributes. You can pick several elements with the mouse by holding the left mouse button or <kbd>ctrl</kbd> button on the keyboard. Hold the <kbd>alt</kbd> button to rotate graphic elements. </p>
+<p>Press <kbd>Spacebar</kbd> and hold the page with the left mouse button to drag it in different directions. Scroll to change the zoom level. </p>
+<p>Pages support layers. You can place objects in front and behind others. There are two ways to arrange an object's position: </p>
+<ol>
+<li><strong>Context menu</strong><br>
+    Select an element, right-click, and choose <strong>Arrange</strong>
+    <figure>
+      <img src="../images/layers.png" alt="Layers">
+      <figcaption><b>Figure 1.</b> Arrange menu</figcaption>
+    </figure></li>
+<li>
+<p><strong>Keyboard combinations</strong><br>
+    Use the following combinations:</p>
+<ul>
+<li>Move to Top: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>up</kbd></li>
+<li>Move to Bottom: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>down</kbd></li>
+<li>Move to Front: <kbd>ctrl</kbd>+<kbd>up</kbd></li>
+<li>Move to Back: <kbd>ctrl</kbd>+<kbd>down</kbd></li>
+</ul>
+</li>
+</ol>
+<h2 id="interface-overview">Interface overview<a class="headerlink" href="#interface-overview" title="Permanent link">#</a></h2>
+<p>Click the <strong>edit</strong> button <img alt="" src="../images/ed_but.png" /> to start working with a page. The editor has the following view. </p>
+<figure>
+    <img src="../images/ped_view.png" alt="Page editor view">
+    <figcaption><b>Figure 2.</b> Page editor view</figcaption>
+</figure>
+
+<p>The editor consists of three main parts: </p>
+<ol>
+<li>Left Panel </li>
+<li>Content Area or Canvas </li>
+<li>Right Panel </li>
+</ol>
+<p>Page elements are on the <strong>Left Panel</strong>. Using these elements you can draw schemes and other visual objects. The <strong>Content Area</strong> represents the page itself. This is the area, where you can put elements from the Left panel. The <strong><a href="../props/">Right Panel</a></strong> contains properties related to the element or the page. <!--Put the reference to the Properties article-->  </p>
+<p>The bar above the Content area consists of the fields <strong>Page Name</strong> and <strong>Search</strong>, and the buttons <strong>Zoom</strong> and <strong>Close Right Panel</strong>. In the <strong>Page Name</strong> field, you can set the page's name. Click the <strong>Localization</strong> button <img alt="local-but.png" src="../images/local-but.png" /> to the menu that allows you to set the page name in available languages.  </p>
+<figure>
+    <img src="../images/local.png" alt="Localization menu">
+    <figcaption><b>Figure 3.</b> Localization menu</figcaption>
+</figure>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the page name translation is not set, HMI View displays the default page name. </p>
+</div>
+<p>Type the page element's name or its part to find it in the <strong>Search</strong> field. Set the page's display scale by clicking the <strong>Zoom</strong> button. The <strong>Close Right Panel</strong> button toggles the Right Panel. </p>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../IDE_main/">IDE overview</a></strong><br>
+An overview of ControlMachines™ HMI project development component.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../../1-UI/UI_pages/">Pages</a></strong><br>
+In this article, you can find brief information about pages, how to add a page to Favorites and how to rename it.</li>
+<li><strong><a href="../hotkeys/">Key combinations</a></strong><br>
+Find keyboard shortcuts that would help to make your work faster and more comfortable.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../left-panel/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../left-panel/" class="btn btn-xs btn-link">
+        Left Panel
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tag_mass/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tag_mass/" class="btn btn-xs btn-link">
+        Generic tag editor
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

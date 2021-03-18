@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Page Objects - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Page Objects", url: "#_top", children: [
+              {title: "Elements", url: "#elements" },
+              {title: "Symbols", url: "#symbols" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../localization/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../localization/" class="btn btn-xs btn-link">
+        Translating into different languages
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../exp_list/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../exp_list/" class="btn btn-xs btn-link">
+        List of expressions
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="page-objects">Page Objects<a class="headerlink" href="#page-objects" title="Permanent link">#</a></h1>
+<p>Figures, images and other page objects.</p>
+<p>The <strong>Left Panel</strong> contains <strong>Objects</strong> which you can place on a page. There are two groups of them: </p>
+<ol>
+<li>Elements</li>
+<li>Symbols.</li>
+</ol>
+<h2 id="elements">Elements<a class="headerlink" href="#elements" title="Permanent link">#</a></h2>
+<p>See the list of <strong>Elements</strong> and their properties in the table below.</p>
+<table>
+ <caption><b>Table 1</b>. Elements.</caption>
+ <thead>
+  <tr>
+     <th>Element</th>
+     <th>Property group</th>
+     <th>Property name</th>
+     <th>Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td rowspan=9>Line</td>
+   <td rowspan=3>General</td>
+   <td>Name</td>
+   <td>Name the object.</td>
+  </tr>
+  <tr>
+   <td>Group name</td>
+   <td>Name the element group.</td>
+  </tr>
+  <tr>
+   <td>Visibility</td>
+   <td>Set the object's ability to be visible. You can write the script which defines conditions of its visibility.</td>
+  </tr>
+  <tr>
+   <td>Layout</td>
+   <td>Coordinates</td>
+   <td>X1, Y1: the coordinates of one end of the line.<br> 
+   X2, Y2: the coordinates of the second end of the line. </td>
+  </tr>
+  <tr>
+   <td rowspan=4>Stroke</td>
+   <td>On/off checkbox</td>
+   <td>Turn the line appearance on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the line colour.</td>
+  </tr>
+  <tr>
+   <td>Type</td>
+   <td>Choose one of three types of lines: 
+    <ol>
+     <li>Solid</li>
+     <li>Dashed</li>
+     <li>Dotted</li>
+    </ol>
+   </td>
+  </tr>
+  <tr>
+   <td>Weight</td>
+   <td>Set the line thickness.</td>
+  </tr>
+  <tr>
+   <td>Events</td>
+   <td>Click</td>
+   <td>Write expressions for on-click acions.</td>
+  </tr>
+  <tr>
+   <td rowspan=15>Rectangle</td>
+   <td rowspan=3>General</td>
+   <td>Name</td>
+   <td>Name the object.</td>
+  </tr>
+  <tr>
+   <td>Group name</td>
+   <td>Name the element group.</td>
+  </tr>
+  <tr>
+   <td>Visibility</td>
+   <td>Set the object's ability to be visible. You can write the script which defines conditions of its visibility.</td>
+  </tr>
+  <tr>
+   <td rowspan=3>Layout</td>
+   <td>Coordinages</td>
+   <td>Set the X and Y coordinates of the rectangle upper left corner.</td>
+  </tr>
+  <tr>
+   <td>Dimensions</td>
+   <td>Set the rectangle width and length.</td>
+  </tr>
+  <tr>
+   <td>Rotate</td>
+   <td>Set the rotation angle.</td>
+  </tr>
+  <tr>
+   <td rowspan=4>Appearance</td>
+   <td>On/off checkbox</td>
+   <td>Turn the rectangle fill on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the fill colour.</td>
+  </tr>
+  <tr>
+   <td>Slider to the right from Palette</td>
+   <td>Change the fill opacity.</td>
+  </tr>
+  <tr>
+   <td>Opacity</td>
+   <td>Change the opacity of the fill and the outline.</td>
+  </tr>
+   <tr>
+   <td rowspan=4>Stroke</td>
+   <td>On/off checkbox</td>
+   <td>Turn the rectangle outline on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the outline colour.</td>
+  </tr>
+  <tr>
+   <td>Type</td>
+   <td>Choose one of three types of lines: 
+    <ol>
+     <li>Solid</li>
+     <li>Dashed</li>
+     <li>Dotted</li>
+    </ol>
+   </td>
+  </tr>
+  <tr>
+   <td>Weight</td>
+   <td>Set the line thickness.</td>
+  </tr>
+  <tr>
+   <td>Events</td>
+   <td>Click</td>
+   <td>Write expressions for on-click acions.</td>
+  </tr>
+   <tr>
+   <td rowspan=13>Ellipse</td>
+   <td rowspan=3>General</td>
+   <td>Name</td>
+   <td>Set the name of the object.</td>
+  </tr>
+  <tr>
+   <td>Group name</td>
+   <td>Set the name of the element group.</td>
+  </tr>
+  <tr>
+   <td>Visibility</td>
+   <td>Set the object's ability to be visible. You can write the script which defines conditions of an object's visibility.</td>
+  </tr>
+  <tr>
+   <td rowspan=3>Layout</td>
+   <td>Coordinages</td>
+   <td>Set the X and Y coordinates of the upper ellipse vertex.</td>
+  </tr>
+  <tr>
+   <td>Dimensions</td>
+   <td>Set the lengths of the ellipse axes.</td>
+  </tr>
+  <tr>
+   <td>Rotate</td>
+   <td>Set the rotation angle.</td>
+  </tr>
+  <tr>
+   <td rowspan=2>Appearance</td>
+   <td>On/off checkbox</td>
+   <td>Turn the ellipse fill on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the fill colour.</td>
+  </tr>
+  </tr>
+   <tr>
+   <td rowspan=4>Stroke</td>
+   <td>On/off checkbox</td>
+   <td>Turn the ellipse outline on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the outline colour.</td>
+  </tr>
+  <tr>
+   <td>Type</td>
+   <td>Choose one of three types of lines: 
+    <ol>
+     <li>Solid</li>
+     <li>Dashed</li>
+     <li>Dotted</li>
+    </ol>
+   </td>
+  </tr>
+  <tr>
+   <td>Weight</td>
+   <td>Set the line thickness.</td>
+  </tr>
+  <tr>
+   <td>Events</td>
+   <td>Click</td>
+   <td>Write expressions for on-click acions.</td>
+  </tr>
+  <td rowspan=8>Image</td>
+   <td rowspan=3>General</td>
+   <td>Name</td>
+   <td>Name the object.</td>
+  </tr>
+  <tr>
+   <td>Group name</td>
+   <td>Name the element group.</td>
+  </tr>
+  <tr>
+   <td>Visibility</td>
+   <td>Set the object's ability to be visible. You can write the script which defines conditions of an object's visibility.</td>
+  </tr>
+  <tr>
+   <td rowspan=3>Layout</td>
+   <td>Coordinages</td>
+   <td>Set the X and Y coordinates of the image upper left corner.</td>
+  </tr>
+  <tr>
+   <td>Dimensions</td>
+   <td>Set the image width and length.</td>
+  </tr>
+  <tr>
+   <td>Rotate</td>
+   <td>Set the rotation angle.</td>
+  </tr>
+  <tr>
+   <td>Source</td>
+   <td>Drag & Drop</td>
+   <td>Drag or drop image files. Supported file formats: 
+    <ul>
+     <li>JPEG</li>
+     <li>JPG</li>
+     <li>PNG</li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Events</td>
+   <td>Click</td>
+   <td>Write expressions for on-click acions.</td>
+  </tr>
+  <tr>
+   <td rowspan=14>Text</td>
+   <td rowspan=4>General</td>
+   <td>Name</td>
+   <td>Name the object.</td>
+  </tr>
+  <tr>
+   <td>Group name</td>
+   <td>Name the element group.</td>
+  </tr>
+  <tr>
+   <td>Text</td>
+   <td>Write the text in this field.</td>
+  </tr>
+  <tr>
+   <td>Visibility</td>
+   <td>Set the object's ability to be visible. You can write the script which defines conditions of an object's visibility.</td>
+  </tr>
+  <tr>
+   <td rowspan=2>Layout</td>
+   <td>Coordinages</td>
+   <td>Set the X and Y coordinates of the text field lower left corner.</td>
+  </tr>
+  <tr>
+   <td>Rotate</td>
+   <td>Set the rotation angle.</td>
+  </tr>
+  <tr>
+   <td>Appearance</td>
+   <td>Opacity</td>
+   <td>Change the text opacity.</td>
+  </tr>
+  <tr>
+   <td rowspan=6>Font</td>
+   <td>Family</td>
+   <td>Choose a font family for your text.</td>
+  </tr>
+  <tr>
+   <td>Style</td>
+   <td>Choose one of four font styles: 
+    <ol>
+     <li>Regular</li>
+     <li>Italic</li>
+     <li>Bold</li>
+     <li>Bold Italic</li>
+    </ol>
+   </td>
+  </tr>
+  <tr>
+   <td>Size</td>
+   <td>Set the text size.</td>
+  </tr>
+  <tr>
+   <td>Color</td>
+   <td>Choose the text colour.</td>
+  </tr>
+  <tr>
+   <td>Horizontal Align</td>
+   <td>Align the text horizontally.</td>
+  </tr>
+  <tr>
+   <td>Vertical Align</td>
+   <td>Align the text vertically.</td>
+  </tr>
+  <tr>
+   <td>Events</td>
+   <td>Click</td>
+   <td>Write expressions for on-click acions.</td>
+  </tr>
+  <tr>
+    <td rowspan=8>Pen</td>
+    <td rowspan=2>General</td>
+    <td>Name</td>
+    <td>Name of the object</td>
+  </tr>
+  <tr>
+    <td>Visibility</td>
+    <td>Set the object's ability to be visible. You can write the script which defines conditions of its visibility.</td>
+  </tr>
+  <tr>
+   <td rowspan=2>Appearance</td>
+   <td>On/off checkbox</td>
+   <td>Turn the ellipse fill on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the fill colour.</td>
+  </tr>
+  <tr>
+   <td rowspan=4>Stroke</td>
+   <td>On/off checkbox</td>
+   <td>Turn the line appearance on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the line colour.</td>
+  </tr>
+  <tr>
+   <td>Type</td>
+   <td>Choose one of three types of lines: 
+    <ol>
+     <li>Solid</li>
+     <li>Dashed</li>
+     <li>Dotted</li>
+    </ol>
+   </td>
+  </tr>
+  <tr>
+   <td>Weight</td>
+   <td>Set the line thickness.</td>
+  </tr>
+  <tr>
+   <td rowspan=8>Polyline</td>
+   <td rowspan=3>General</td>
+   <td>Name</td>
+   <td>Name the object.</td>
+  </tr>
+  <tr>
+   <td>Group name</td>
+   <td>Name the element group.</td>
+  </tr>
+  <tr>
+   <td>Visibility</td>
+   <td>Set the object's ability to be visible. You can write the script which defines conditions of an object's visibility.</td>
+  </tr>
+  <tr>
+   <td rowspan=4>Stroke</td>
+   <td>On/off checkbox</td>
+   <td>Turn the line appearance on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the line colour.</td>
+  </tr>
+  <tr>
+   <td>Type</td>
+   <td>Choose one of three types of lines: 
+    <ol>
+     <li>Solid</li>
+     <li>Dashed</li>
+     <li>Dotted</li>
+    </ol>
+   </td>
+  </tr>
+  <tr>
+   <td>Weight</td>
+   <td>Set the line thickness.</td>
+  </tr>
+  <tr>
+   <td>Events</td>
+   <td>Click</td>
+   <td>Write expressions for on-click acions.</td>
+  </tr>
+  <tr>
+   <td rowspan=8>Polygon</td>
+  <td rowspan=3>General</td>
+   <td>Name</td>
+   <td>Name the object.</td>
+  </tr>
+  <tr>
+   <td>Group name</td>
+   <td>Name the element group.</td>
+  </tr>
+  <tr>
+   <td>Visibility</td>
+   <td>Set the object's ability to be visible. You can write the script which defines conditions of an object's visibility.</td>
+  </tr>
+  <tr>
+   <td rowspan=4>Stroke</td>
+   <td>On/off checkbox</td>
+   <td>Turn the line appearance on and off.</td>
+  </tr>
+  <tr>
+   <td>Palette</td>
+   <td>Choose the line colour.</td>
+  </tr>
+  <tr>
+   <td>Type</td>
+   <td>Choose one of three types of lines: 
+    <ol>
+     <li>Solid</li>
+     <li>Dashed</li>
+     <li>Dotted</li>
+    </ol>
+   </td>
+  </tr>
+  <tr>
+   <td>Weight</td>
+   <td>Set the line thickness.</td>
+  </tr>
+  <tr>
+   <td>Events</td>
+   <td>Click</td>
+   <td>Write expressions for on-click acions.</td>
+  </tr>
+</table>
+
+<p>The <strong>Pen</strong> element allows you to draw curved lines. Draw broken lines with <strong>Polyline</strong> and polygons with the <strong>Polygon</strong> element.</p>
+<h2 id="symbols">Symbols<a class="headerlink" href="#symbols" title="Permanent link">#</a></h2>
+<p><strong>Symbols</strong> consist of different objects that have special meaning and properties. Such property groups as <strong>GENERAL</strong>, <strong>LAYOUT</strong>, and <strong>EVENTS</strong> are similar to <strong>Elements</strong>. For more information about the property group <strong>LABELS</strong>, read the <a href="../props/">Element properties</a> article.</p>
+<p>The <strong>ALARMS</strong> property allows users to associate elements with alarms. If the alarm is active, a visual signal appears around the schematic component.    </p>
+<p>The <strong>VARIABLES</strong> is a set of different parameters which are adjusted by script-based <a href="../exp_list/">expressions</a>. The following table shows interconnection of variables and components.</p>
+<!--<table>
+ <caption>Table 2. Components and their variables</caption>
+ <thead>
+  <tr>
+     <th>Element</th>
+     <th>Variable</th>
+     <th>Comment</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td rowspan=2>Compressor</td>
+   <td>Manual</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>Is_running</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td rowspan=3>Damper With Spring Return</td>
+   <td>Modulating</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>Energized</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>Manual</td>
+   <td></td>
+  </tr>
+  </tr>
+  <td rowspan=5>Damper</td>
+   <td>Alarm_ack</td>
+   <td>Obsolete</td>
+  </tr>
+  <tr>
+   <td>Alarm_unack</td>
+   <td>Obsolete</td>
+  </tr>
+  <tr>
+   <td>Modulating</td>
+   <td>Obsolete</td>
+  </tr>
+  <tr>
+   <td>Manual</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>On_off</td>
+   <td></td>
+  </tr>
+ </tbody>
+</table>-->
+
+<table>
+  <caption><b>Table 2.</b> Variables and Symbols</caption>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Element</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Energized</td>
+      <td>Damper With Spring Return</td>
+      <td>The black triangle's apex changes its direction from up to down if the tag value differs from <i>0</i> or <i>false</i></td>
+    </tr>
+    <tr>
+      <td>Is_running</td>
+      <td>
+       <ol>
+        <li>Compressor</li>
+        <li>Pump</li>
+        <li>Valve 2Ports</li>
+        <li>Valve 3Ports</li>
+        <li>Valve 3Ports Mirrored</li>
+       </ol>
+      </td>
+      <td>A part of an element becomes green if the tag value differs from <i>0</i> or <i>false</i></td>
+    </tr>
+    <tr>
+      <td>Manual</td>
+      <td>
+        <ol>
+         <li>Compressor</li>
+         <li>Damper</li>
+         <li>Damper With Spring Return</li>
+         <li>Energy Meter</li>
+         <li>Fan</li>
+         <li>Heating-Coliing With Sensor</li>
+         <li>Manometer</li>
+         <li>Sensor</li>
+         <li>State Indicator</li>
+         <li>Valve 2Ports</li>
+         <li>Valve 3Ports</li>
+         <li>Valve 3Ports Mirrored</li>
+         <li>Valve Check</li>
+        </li>
+      </td>
+      <td>A yellow frame becomes visible whenever the tag value is different from <i>0</i> or <i>false</i></td>
+    </tr>
+    <tr>
+      <td>Manual_mode</td>
+      <td>Pump</td>
+      <td>A yellow frame becomes visible whenever the tag value is different from <i>0</i> or <i>false</i></td>
+    </tr>
+    <tr>
+      <td>Modulating</td>
+      <td>
+        <ol>
+         <li>Damper</li>
+         <li>Damper With Spring Return</li>
+        </ol>
+      </td>
+      <td>The vertical line inside the rectangle turns clockwise if the tag value differs from <i>0</i> or <i>false</i></td>
+    </tr>
+    <tr>
+      <td>On_off</td>
+      <td>Damper</td>
+      <td>The circle above the rectangle becomes green if the tag value differs from <i>0</i> or <i>false</i></td>
+    </tr>
+    <tr>
+      <td>Sign</td>
+      <td>Heater</td>
+      <td>If written <i>plus</i> in the text field, then <i>+</i> is indicated.<br>
+      If written <i>minus</i> in the text field, then <i>-</i> is indicated.</td>
+    </tr>
+    <tr>
+      <td>Stroke Color</td>
+      <td>State Indicator</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stroke Width</td>
+      <td>State Indicator</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Value</td>
+      <td>Fan</td>
+      <td>The triangle inside becomes green if the tag value is bigger than <i>0</i> or is <i>true</i></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../page_ed/">Page editor</a></strong><br>
+This article shortly tells about pages, page editor, and its interface. </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../localization/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../localization/" class="btn btn-xs btn-link">
+        Translating into different languages
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../exp_list/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../exp_list/" class="btn btn-xs btn-link">
+        List of expressions
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

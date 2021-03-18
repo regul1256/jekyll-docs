@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Element properties - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Page element properties", url: "#_top", children: [
+              {title: "Overview", url: "#overview" },
+              {title: "GENERAL", url: "#general" },
+              {title: "LAYOUT", url: "#layout" },
+              {title: "VARIABLES", url: "#variables" },
+              {title: "ADD TO TREND", url: "#add-to-trend" },
+              {title: "LABELS", url: "#labels" },
+              {title: "EVENTS", url: "#events" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../alarmsprop/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../alarmsprop/" class="btn btn-xs btn-link">
+        Alarms Variable
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../page_prop/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../page_prop/" class="btn btn-xs btn-link">
+        Page properties
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="page-element-properties">Page element properties<a class="headerlink" href="#page-element-properties" title="Permanent link">#</a></h1>
+<p>In this article, briefly about settings and options of page elements.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
+<p>Objects that you draw have different properties. The properties depend on the object type. Any type has own set of properties. You can adjust them in the <strong>Right Panel</strong>. The object properties include several groups: </p>
+<ul>
+<li>General</li>
+<li>Variables</li>
+<li>Labels </li>
+<li>Events </li>
+</ul>
+<h2 id="general">GENERAL<a class="headerlink" href="#general" title="Permanent link">#</a></h2>
+<p>Here you can edit the following settings: </p>
+<ol>
+<li><strong>Name</strong><br> Sets the name of the object. </li>
+<li><strong>Group name</strong><br> Sets the name of the element group. </li>
+<li><strong>Visibility</strong><br> Sets the object's ability to be visible. This property can be generally turned on and off by clicking the switch. Or you can set the script which defines conditions of an object's visibility. </li>
+</ol>
+<h2 id="layout">LAYOUT<a class="headerlink" href="#layout" title="Permanent link">#</a></h2>
+<p>Layout is a group of properties which defines dimensional characteristics of an object. Here you can adjust the element's position in both dimensions, its width and height, and the angle of rotation.  </p>
+<h2 id="variables">VARIABLES<a class="headerlink" href="#variables" title="Permanent link">#</a></h2>
+<p>This group represents a set of different parameters which are adjusted by script-based <a href="../exp_list/">expressions</a>. <!--Here should be a reference to the list of variables--> </p>
+<h2 id="add-to-trend">ADD TO TREND<a class="headerlink" href="#add-to-trend" title="Permanent link">#</a></h2>
+<p>This property allows associating a page element with tags so <strong>HMI View</strong> users would be able to add tags to a trend group using the <strong>Create Trend Group</strong> button.  </p>
+<h2 id="labels">LABELS<a class="headerlink" href="#labels" title="Permanent link">#</a></h2>
+<p>You can configure label display in this section. Here are the settings of this group: </p>
+<ol>
+<li>Show Label </li>
+<li>Label </li>
+<li>Label Position</li>
+<li>Family</li>
+<li>Size</li>
+<li>Style</li>
+</ol>
+<p><strong>Show Label</strong> switches the label display on and off. This option has two values: <em>true</em> and <em>false</em>. In the field <strong>Label</strong> you can put the text needed to display. Properties <strong>Family</strong>, <strong>Size</strong>, and <strong>Style</strong> allow configuring font parameters. </p>
+<h2 id="events">EVENTS<a class="headerlink" href="#events" title="Permanent link">#</a></h2>
+<p>You can write an expression which will define an on-click action in the <strong>Click</strong> contextual menu.   </p>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../page_ed/">Page editor</a></strong><br>
+This article shortly tells about pages, page editor, and its interface. </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../alarmsprop/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../alarmsprop/" class="btn btn-xs btn-link">
+        Alarms Variable
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../page_prop/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../page_prop/" class="btn btn-xs btn-link">
+        Page properties
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Tag history settings - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Tag history settings", url: "#_top", children: [
+              {title: "General Settings", url: "#general-settings" },
+              {title: "Other settings", url: "#other-settings" },
+              {title: "History storing principle", url: "#history-storing-principle" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../recalculate/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../recalculate/" class="btn btn-xs btn-link">
+        History recalculation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tag_gen_settings/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tag_gen_settings/" class="btn btn-xs btn-link">
+        Tag general settings
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="tag-history-settings">Tag history settings<a class="headerlink" href="#tag-history-settings" title="Permanent link">#</a></h1>
+<p>Briefly about the History settings menu.</p>
+<h2 id="general-settings">General Settings<a class="headerlink" href="#general-settings" title="Permanent link">#</a></h2>
+<p><strong>Store history</strong> flag switches on and off history storing.</p>
+<p><strong>Use project history preferences</strong> flag defines whether to store tag history with project preferences.</p>
+<p>You can choose to store aggregate tag values. The <strong>Aggregate the tag values before storing</strong> flag activates one of the aggregation functions:</p>
+<ol>
+<li><strong>Average</strong><br>
+This function calculates and records in history an average value for the specified period.</li>
+<li><strong>Median</strong><br>
+This function calculates and records in history a median value for the specified period.</li>
+<li><strong>Percentile (50, 75, 90, 95)</strong><br>
+This set of functions records calculates and puts in history a value below which a given percentage of values took place for the specified period. For example, the percentile 95 for one hour means that function is going to find and record in history value which is higher than 95 percent of observed values in one hour.</li>
+<li><strong>Minimum</strong><br>
+This function calculates and records in history the lowest of values for the specified period.</li>
+<li><strong>Maximum</strong><br>
+This function calculates and records in history the highest of values for the specified period.</li>
+<li><strong>First</strong><br>
+This function calculates and records in history the first value for the specified period.</li>
+<li><strong>Last</strong><br>
+This function calculates and records in history the last value for the specified period.</li>
+</ol>
+<p>Aggregation <strong>Request interval</strong> sets a period for which data to be calculated. You can also choose to <strong>exclude duplicate values</strong>. The subparameter <strong>deadband</strong> defines a level of tolerance for data to be recorded.</p>
+<blockquote>
+<p><strong>Attention:</strong> It is necessary to set aggregation interval not less than 5 seconds</p>
+</blockquote>
+<p>Tags may depend on one or several switch tags. Acivating the flag <strong>This tag depends on switch tags</strong>, you can set dependencies on switches and so called <strong>Invalid periods</strong> before and after switching. During these periods the system does not record history.</p>
+<h2 id="other-settings">Other settings<a class="headerlink" href="#other-settings" title="Permanent link">#</a></h2>
+<p><strong>Chart settings</strong> contain the option <strong>Interpolate points</strong>. Turning it on executes polynomial interpolation which allows displaying of curved graphs. It may be useful for presenting of analogue value charts.</p>
+<p><strong>Cleanup Settings</strong> contain the option <strong>Enable history cleanup</strong>. This parameter consists of two settings:</p>
+<ol>
+<li>Storing period</li>
+<li>Also delete data from the Cloud</li>
+</ol>
+<p>When cleanup is enabled, the system removes the history data of a tag after the number of days specified in the <strong>storing period</strong> field. The <strong>Also delete from Cloud</strong> flag deletes the history from a cloud database.    </p>
+<h2 id="history-storing-principle">History storing principle<a class="headerlink" href="#history-storing-principle" title="Permanent link">#</a></h2>
+<p>A tag periodically requests data from a device. Storage collects and aggregates this raw data by one of the functions described above. Then, storage sends aggregated data to a cloud database.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Storage sends to the database only the value that differs from the previous one.</p>
+</div>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../IDE_main/">IDE overview</a></strong><br>
+An overview of ControlMachines™ HMI project development component.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../tag_gen_settings/">Tag general settings</a></strong><br>
+In this article, you can find short descriptions of tag general settings.</li>
+<li><strong><a href="../modbus_ed/">Modbus TCP tag editor</a></strong><br>
+Overview of Modbus TCP tag settings.</li>
+<li><strong><a href="../BACnet_ed/">BACnet tag editor</a></strong><br>
+Overview of BACnet tag settings. </li>
+<li><strong><a href="../z-wave_ed/">Z-Wave tag editor</a></strong><br>
+This article is about Z-Wave tags and their parameters which you can change in the editor.</li>
+<li><strong><a href="../opc_ed/">OPC UA tag editor</a></strong><br>
+This article is about OPC UA tags and their parameters which you can change in the editor.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../recalculate/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../recalculate/" class="btn btn-xs btn-link">
+        History recalculation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tag_gen_settings/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tag_gen_settings/" class="btn btn-xs btn-link">
+        Tag general settings
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

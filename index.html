@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>ControlMachines™ HMI user guide</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "ControlMachines\u2122 HMI user guide", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        ControlMachines™ HMI user guide<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">ControlMachines™ HMI</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Working with a single project in HMI View</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_main/" class="wm-article-link wm-toc-text">ControlMachines™ HMI View</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_toolbar/" class="wm-article-link wm-toc-text">Horizontal toolbar</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Pages</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_pages/" class="wm-article-link wm-toc-text">Section overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_share-page/" class="wm-article-link wm-toc-text">Sharing pages</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_manage/" class="wm-article-link wm-toc-text">Managing tags</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_pages_curve-ed/" class="wm-article-link wm-toc-text">Regulator curve editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_time_replay/" class="wm-article-link wm-toc-text">History Replay mode</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Alarms</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_alarms/" class="wm-article-link wm-toc-text">Section overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_alarms_system/" class="wm-article-link wm-toc-text">System alarms</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="1-UI/UI_alarms_swatchers/" class="wm-article-link wm-toc-text">Signal watchers</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_trends_review/" class="wm-article-link wm-toc-text">Trends</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_events/" class="wm-article-link wm-toc-text">Logs</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_documents/" class="wm-article-link wm-toc-text">Documents</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_scheduler/" class="wm-article-link wm-toc-text">Events</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Monitoring multiple projects with Portal</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="2-Portal/Portal_main/" class="wm-article-link wm-toc-text">ControlMachines™ HMI Portal</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="2-Portal/Portal_user_profile/" class="wm-article-link wm-toc-text">User profile</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="2-Portal/Portal_projects/" class="wm-article-link wm-toc-text">Portal Projects</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Project profile</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="2-Portal/Projects_pages_docs/" class="wm-article-link wm-toc-text">View pages</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="2-Portal/Projects_docs/" class="wm-article-link wm-toc-text">Project documents</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="2-Portal/Projects_view_tags/" class="wm-article-link wm-toc-text">View tags</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="2-Portal/Projects_view_alarms/" class="wm-article-link wm-toc-text">View alarms</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="2-Portal/Portal_preferences/" class="wm-article-link wm-toc-text">View preferences</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="2-Portal/stats/" class="wm-article-link wm-toc-text">View stats</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="2-Portal/Projects_perm/" class="wm-article-link wm-toc-text">Portal user Permissions</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 "><a href="2-Portal/Portal_alarms/" class="wm-article-link wm-toc-text">Monitoring alarms</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="2-Portal/portal_reports/" class="wm-article-link wm-toc-text">Portal Reports</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Developing projects in IDE</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="4-IDE/IDE_main/" class="wm-article-link wm-toc-text">ControlMachines™ IDE</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="4-IDE/alarms/" class="wm-article-link wm-toc-text">Alarm editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Devices</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/modbus_dev/" class="wm-article-link wm-toc-text">Modbus TCP devices</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/BACnet_dev/" class="wm-article-link wm-toc-text">BACnet devices</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/z-wave_dev/" class="wm-article-link wm-toc-text">Z-Wave devices</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/opc_dev/" class="wm-article-link wm-toc-text">OPC UA devices</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/mqtt-dev/" class="wm-article-link wm-toc-text">MQTT devices</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Tag editors</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/tags/" class="wm-article-link wm-toc-text">Briefly about tags</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/tag_gen_settings/" class="wm-article-link wm-toc-text">Tag general settings</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/history_set/" class="wm-article-link wm-toc-text">Tag history settings</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/recalculate/" class="wm-article-link wm-toc-text">History recalculation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/modbus_ed/" class="wm-article-link wm-toc-text">Modbus TCP tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/BACnet_ed/" class="wm-article-link wm-toc-text">BACnet tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/z-wave_ed/" class="wm-article-link wm-toc-text">Z-Wave tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/opc_ed/" class="wm-article-link wm-toc-text">OPC UA tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/mqtt-tag/" class="wm-article-link wm-toc-text">MQTT tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/vt_ed/" class="wm-article-link wm-toc-text">Virtual tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/reg_ed/" class="wm-article-link wm-toc-text">Regulator tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/gen_ed/" class="wm-article-link wm-toc-text">Generator tag editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/vector/" class="wm-article-link wm-toc-text">Vector tags</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/tag_mass/" class="wm-article-link wm-toc-text">Generic tag editor</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Creating and editing pages</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/page_ed/" class="wm-article-link wm-toc-text">Page Editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/left-panel/" class="wm-article-link wm-toc-text">Left Panel</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/hotkeys/" class="wm-article-link wm-toc-text">Key combinations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/page_prop/" class="wm-article-link wm-toc-text">Page properties</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/props/" class="wm-article-link wm-toc-text">Element properties</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/alarmsprop/" class="wm-article-link wm-toc-text">Alarms Variable</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/exp/" class="wm-article-link wm-toc-text">Expression Editor</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/exp_list/" class="wm-article-link wm-toc-text">List of expressions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/page_el/" class="wm-article-link wm-toc-text">Page Objects</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="4-IDE/localization/" class="wm-article-link wm-toc-text">Translating into different languages</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 "><a href="4-IDE/emv/" class="wm-article-link wm-toc-text">EnergyMachines™ Verification function</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="4-IDE/importing/" class="wm-article-link wm-toc-text">Importing tags</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 "><a href="3-Mobile/mobile-main/" class="wm-article-link wm-toc-text">ControlMachines™ Mobile App</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">How to</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_alarms_swatchers_task/" class="wm-article-link wm-toc-text">Create a signal watcher</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_trends/" class="wm-article-link wm-toc-text">Create a trend group</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="1-UI/UI_scheduler_task/" class="wm-article-link wm-toc-text">Create a scheduler</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="5-Tasks/opc-ua-dev/" class="wm-article-link wm-toc-text">Create an OPC UA device</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="5-Tasks/opc-ua-tag/" class="wm-article-link wm-toc-text">Create an OPC UA tag</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="5-Tasks/writable_scr/" class="wm-article-link wm-toc-text">Use writable scripts</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="1-UI/UI_main/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="1-UI/UI_main/" class="btn btn-xs btn-link">
+        ControlMachines™ HMI View
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="controlmachinestm-hmi-user-guide"><strong>ControlMachines™ HMI user guide</strong><a class="headerlink" href="#controlmachinestm-hmi-user-guide" title="Permanent link">#</a></h1>
+<p>Home page of ControlMachines™ HMI user guide.</p>
+<p>ControlMachines™ HMI is a system for control and management of energy installations. Its main goal is to supervise and optimise operations of facilities.</p>
+<p>Key functions:</p>
+<ul>
+<li>Data acquisition and monitoring</li>
+<li>Alert notifications</li>
+<li>History storage</li>
+<li>Performance visualization</li>
+</ul>
+<p>This user guide contains documentation about ControlMachines™ HMI components and related applications. The guide consists of several blocks which unite information by a thematic principle. It may be a system segment or other topic that combines different pieces of information. </p>
+<ul>
+<li>
+<p><strong>Working with a single project in HMI View</strong> <br>
+    This block describes ControlMachines™ HMI View. It comprises of the general application review and a set of articles which describe the interface and other aspects more specifically.</p>
+</li>
+<li>
+<p><strong>Monitoring multiple projects with Portal</strong><br>
+    In this part of the documentation, ControlMachines™ HMI Portal is described. Here you can find the application overview and section descriptions.</p>
+</li>
+<li>
+<p><strong>Developing projects in IDE</strong><br>
+    This block documents ControlMachines™ HMI IDE. It describes functional parts for project creating and editing.      </p>
+</li>
+<li>
+<p><strong>ControlMachines™ Mobile App</strong><br>
+    In this clause, a mobile application for monitoring is described. </p>
+</li>
+<li>
+<p><strong>How to</strong><br>
+    A group of articles describing instructions for performing particular items.</p>
+</li>
+</ul>
+<p>A piece of documentation on a particular subject is called an article. Each block consists of articles. Reading these articles, you can find information about how to work with ControlMachines™ applications and their functional parts. Some of them describe the features and abilities of components others provide instructions.</p>
+<p>Articles contain text, images, and tables. There are references to other articles in this documentation or the external information sources. An article can be organised into sections and subsections that divided from each other by different headers. At the end of each article, there are references to the <strong>Parent article</strong> – the article which is one level higher than the current one – and to <strong>Related articles</strong> – the articles which can be on the same or the lower level of the  hierarchy, or in other parts of this user guide.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The articles in the <strong>How to</strong> section are called tasks. It is so to distinguish them from the other articles which depict features and provide general or specific information.   </p>
+</div>
+<hr />
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="1-UI/UI_main/">ControlMachines™ HMI View</a></strong><br />
+This article observes ControlMachines™ HMI View, here you can read about its structure and common elements.</li>
+<li><strong><a href="2-Portal/Portal_main/">ControlMachines™ HMI Portal</a></strong><br />
+This article contains general information about ControlMachines™ HMI Portal, its features, and interface.</li>
+<li><strong><a href="3-Mobile/mobile-main/">ControlMachines™ Mobile App</a></strong><br />
+Brief information about the mobile application</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="1-UI/UI_main/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="1-UI/UI_main/" class="btn btn-xs btn-link">
+        ControlMachines™ HMI View
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
+<!--
+MkDocs version : 1.1
+Build Date UTC : 2021-03-17 17:29:19
+-->

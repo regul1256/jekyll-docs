@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Tag general settings - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Tag general settings", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../history_set/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../history_set/" class="btn btn-xs btn-link">
+        Tag history settings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tags/" class="btn btn-xs btn-link">
+        Briefly about tags
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="tag-general-settings">Tag general settings<a class="headerlink" href="#tag-general-settings" title="Permanent link">#</a></h1>
+<p>In this article, you can find short descriptions of tag general settings.</p>
+<p><strong>External data type</strong> depends on the input data type. There are the following external data types:</p>
+<ul>
+<li>Integer and array of integer (<em>integer[]</em>)</li>
+<li>Float and array of float (<em>float[]</em>)</li>
+<li>Boolean and array of boolean (<em>boolean[]</em>)</li>
+</ul>
+<p><strong>Converter type</strong> has three options:</p>
+<ol>
+<li>No data transformation</li>
+<li>Linear numeric transformation</li>
+<li>Multiply numeric transformation</li>
+</ol>
+<p>The first option doesn't mean any transformation of the output value.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For <code>boolean</code> types of data the only available option is <em>No data transformation</em></p>
+</div>
+<p><strong>Linear numeric transformation</strong> transforms the value from one scale into another.</p>
+<p><strong>Multiply numeric transformation</strong> multiplies the value with a custom coefficient. Put the number you need in the <strong>Factor</strong> field. You can type integer and fractional values. </p>
+<p>When active, the <strong>Do not remove on tag importing</strong> flag prevents the tag from deleting while importing tags.
+The <strong>Do not require commenting on value change</strong> option allows users to change the tag's value without leaving records in the commentary field.</p>
+<p>Other settings include:</p>
+<ul>
+<li>
+<p><strong>Limits</strong><br>
+Configure one of three possible options: </p>
+<ul>
+<li><strong>None</strong><br>
+The system defines operable limits itself. </li>
+<li><strong>Range</strong><br>
+Define the range of values that available to a user for operations. </li>
+<li><strong>Set</strong><br>
+Determine particular tag values that user can write to the tag. </li>
+</ul>
+</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <strong>Limits</strong> setting limits only the values that users can write to the tag. The tag can take values that have not been set by <strong>Limits</strong> if it, for example, depends on some external factors. </p>
+</div>
+<!--Determines the range of values that available to a user for operations. If you put the Automatically flag on, then the system defines operable limits. You can make custom limits. For instance, you set boundaries for a writable tag in the range from 0 to 10. It means that an operator can put the numbers only in this range, including 0 and 10.
+
+    !!! important
+        The Set limits setting only limits value ranges for users to write. The same tag can have values both sides of the range if it depends on external parameters.
+
+-   **Tag value limits**<br>
+Set the range of values that will be displayed in the HMI View.-->
+
+<ul>
+<li>
+<p><strong>Format string</strong><br>
+Set the format of displaying the value in the HMI View. It is relevant for tags of float types. You can define the number of digits after a decimal point. For example, you need two figures to be displayed after a point. There are two ways to set the string: </p>
+<ul>
+<li>
+<p><code>0.00</code><br>
+In this case, integer values will be displayed with two zeros after a decimal point. You will see the value displayed like in the picture below:</p>
+<p><img alt="value display example" src="../images/value.png" /></p>
+</li>
+<li>
+<p><code>#.##</code><br>
+In this case, integer values will appear on the screen without signs after a decimal point, like in the following image: </p>
+<p><img alt="value display example" src="../images/value1.png" /></p>
+</li>
+</ul>
+<p>Also, you can put the <code>%</code> sing so values will be formatted as percentage.</p>
+</li>
+<li>
+<p><strong>Engineeering unit</strong><br>
+Defines a unit of measurement to be displayed along with the tag value. The setting is optional.</p>
+</li>
+</ul>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../IDE_main/">IDE overview</a></strong><br>
+An overview of ControlMachines™ HMI project development component.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../history_set/">Tag history settings</a></strong><br>
+Briefly about History settings menu.</li>
+<li><strong><a href="../modbus_ed/">Modbus TCP tag editor</a></strong><br>
+Overview of Modbus TCP tag settings.</li>
+<li><strong><a href="../BACnet_ed/">BACnet tag editor</a></strong><br>
+Overview of BACnet tag settings. </li>
+<li><strong><a href="../z-wave_ed/">Z-Wave tag editor</a></strong><br>
+This article is about Z-Wave tags and their parameters which you can change in the editor.</li>
+<li><strong><a href="../opc_ed/">OPC UA tag editor</a></strong><br>
+This article is about OPC UA tags and their parameters which you can change in the editor.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../history_set/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../history_set/" class="btn btn-xs btn-link">
+        Tag history settings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tags/" class="btn btn-xs btn-link">
+        Briefly about tags
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

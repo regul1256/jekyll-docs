@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Expression Editor - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Expression Editor", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../exp_list/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../exp_list/" class="btn btn-xs btn-link">
+        List of expressions
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../alarmsprop/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../alarmsprop/" class="btn btn-xs btn-link">
+        Alarms Variable
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="expression-editor">Expression Editor<a class="headerlink" href="#expression-editor" title="Permanent link">#</a></h1>
+<p>The <strong>Expression Editor</strong> is a feature of the <a href="../page_ed/">Page editor</a>. You can create script-based <code>expressions</code> in the <strong>Expression Editor</strong>. </p>
+<p>You can initiate the <strong>Expression Editor</strong> when editing properties of a page element. The icon <strong>Set Expression</strong> <img alt="" src="../images/exp.png" /> shows that you can open the dialogue window. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When the icon is blue, then the expression has already been set. However, you can click the icon and edit the existing expression. </p>
+</div>
+<p>In the following image, you can see the <strong>Expression Editor</strong>. </p>
+<figure>
+    <img src="../images/exp_win.png" alt="exp_win.png">
+    <figcaption><b>Figure 1.</b>Expression Editor</figcaption>
+</figure>
+
+<p>There are buttons in the header represent functions to ease your work with the expression editor:</p>
+<ul>
+<li>Insert a quick snippet<br>
+    Allows users to insert a predefined expression. The expression to be pasted depends on the property. You can use this button when editing the following properties. 
+    <table>
+        <caption><b>Table 1.</b> Properties that allow inserting a quick snippet</caption>
+        <theader>
+            <tr>
+                <th>Expression</th>
+                <th>Property</th>
+            </tr>
+        </theader>
+        <tbody>
+            <tr>
+                <td rowspan="6"><code>value</code></td>
+                <td><code>Manual</code></td>        <br />
+            </tr>
+            <tr>
+                <td><code>Manual_mode</code></td>
+            </tr>
+            <tr>
+                <td><code>Is_running</code></td>
+            </tr>
+            <tr>
+                <td><code>Value</code></td>
+            </tr>
+            <tr>
+                <td><code>isVisble</code></td>
+            </tr>
+            <tr>
+                <td><code>Blinking</code></td>
+            </tr>
+            <tr>
+                <td><code>changeValue</code></td>
+                <td><code>Click</code></td>
+            </tr>
+            <tr>
+                <td><code>formatValue</code></td>
+                <td><code>Text</code></td>
+            </tr>
+        </tbody>
+    </table></li>
+<li>Pick up an alarm<br>
+    Opens a menu that allows you to pick an alarm from the list. You will have the alarm's relative path inserted to the cursor's position as the result of the operation. </li>
+<li>Pick up a tag<br>
+    Opens a menu that allows you to pick a tag from the list. You will have the tag's relative path inserted to the cursor's position as the result of the operation. When picking tags with Pick up a tag button or via a hotkey combination, you can select several tags, just hold the <code>ctrl</code> button and choose tags with the mouse. </li>
+<li>Pick up a page<br>
+    Opens a menu that allows you to pick a page from the list. You will have the page's relative path inserted to the cursor's position as the result of the operation.</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Use the following hotkeys: </p>
+<ul>
+<li><code>Alt+Shift+A</code> for alarm picking </li>
+<li><code>Alt+Shift+T</code> for tag picking </li>
+<li><code>Alt+Shift+P</code> for page picking</li>
+<li><code>ctrl+space</code> combination opens a list of available options at the cursor position.</li>
+</ul>
+</div>
+<p>The Expression editor has a validation mechanism which prevents its users from incorrect expression writing. </p>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../page_ed/">Page editor</a></strong><br>
+This article shortly tells about pages, page editor, and its interface. </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../exp_list/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../exp_list/" class="btn btn-xs btn-link">
+        List of expressions
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../alarmsprop/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../alarmsprop/" class="btn btn-xs btn-link">
+        Alarms Variable
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

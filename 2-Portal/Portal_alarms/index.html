@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Monitoring alarms - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Monitoring alarms", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../portal_reports/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../portal_reports/" class="btn btn-xs btn-link">
+        Portal Reports
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Projects_perm/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Projects_perm/" class="btn btn-xs btn-link">
+        Portal user Permissions
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="monitoring-alarms">Monitoring alarms<a class="headerlink" href="#monitoring-alarms" title="Permanent link">#</a></h1>
+<p>This article will tell you about the alarm monitoring section of Portal. </p>
+<p>Click <strong>Alarms</strong> in the <strong>Navigation</strong> menu to open the section. Here you can see the table with alarms from available projects. </p>
+<figure>
+    <img src="../images/portal-alarms2.png" alt="portal-alarms2.png">
+    <figcaption><b>Figure 1.</b> Alarms section view</figcaption>
+</figure>
+
+<p>The table consists of the following columns.</p>
+<table>
+    <caption><b>Table 1.</b> Alarms section described</caption>
+    <tr>
+        <th>Column name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Time</td>
+        <td>The time of alarm occurrence</td>
+    </tr>
+    <tr>
+        <td>Plant</td>
+        <td>A facility where an alarm occurred. You can open a project in HMI View clicking on its name.</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>The alarm name. You can navigate to the associated with the alarm page if there is the following icon <img src="../images/alarm-link.png"/> appears to the left from the alarm name.</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>If set so, here can be a short text message.</td>
+    </tr>
+    <tr>
+        <td>State</td>
+        <td>The current state of the alarm.</td>
+    </tr>
+    <tr>
+        <td>Priority</td>
+        <td>The alarm priority.</td>
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>The alarm category.</td>
+    </tr>
+    <tr>
+        <td>Actions</td>
+        <td>This column contains available actions that you can perform with the alarm. You may have the following options: <b>Acknowledge</b>, <b>Shelve</b>, <b>Start monitoring</b>, <b>Manage comment</b>.</td>
+    </tr>
+</table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The actions available to you are managed by project and Portal administrators. </p>
+</div>
+<p>You can sort the table by each column in ascending or descending orders. Click a column header to perform the action. </p>
+<p>There is a filtering mechanism which eases work with the table. Click the icon to open the filtering menu <img alt="" src="../images/filter.png" />. The menu will appear on top of the table. </p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you have clicked the icon and only the time controls bar is visible, try to scroll the table up to its top. </p>
+</div>
+<p>Using the <strong>time controls bar</strong>, you can filter alarms by the time of their occurrence. It is possible to filter by fixed time intervals, for example, for the last hour, day, and so on. Also, you can set the custom period. You can filter alarms by each of the columns using the <strong>filter row</strong>. </p>
+<figure>
+    <img src="../images/filter-row.png" alt="filter-row.png">
+    <figcaption><b>Figure 2.</b> Filter row</figcaption>
+</figure>
+
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../Portal_overview/">ControlMachines™ HMI Portal</a></strong><br>
+This article contains general information about ControlMachines™ HMI Portal, its features, and interface.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../../1-UI/UI_alarms/">Alarms</a></strong><br>
+In this article: alarms and what they do. You'll find out what does "acknowledge alarm" mean and what shelved and monitored alarms are.</li>
+<li><strong><a href="../../4-IDE/alarms/">Alarm editor</a></strong><br>
+Describing alarm properties which can be edited with the Alarm editor. </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../portal_reports/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../portal_reports/" class="btn btn-xs btn-link">
+        Portal Reports
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Projects_perm/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Projects_perm/" class="btn btn-xs btn-link">
+        Portal user Permissions
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

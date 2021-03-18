@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Translating into different languages - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Translating into different languages", url: "#_top", children: [
+              {title: "Localization menu", url: "#localization-menu" },
+              {title: "Translation table", url: "#translation-table" },
+              {title: "The i18n function", url: "#the-i18n-function" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../emv/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../emv/" class="btn btn-xs btn-link">
+        EnergyMachines™ Verification function
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../page_el/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../page_el/" class="btn btn-xs btn-link">
+        Page Objects
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="translating-into-different-languages">Translating into different languages<a class="headerlink" href="#translating-into-different-languages" title="Permanent link">#</a></h1>
+<p>IDE supports translation of page names, page descriptions, and text boxes into different languages.</p>
+<h2 id="localization-menu">Localization menu<a class="headerlink" href="#localization-menu" title="Permanent link">#</a></h2>
+<p>Click the <strong>Localization</strong> button <img alt="local-but1.png" src="../images/local-but1.png" /> to open the menu. The button is located in a <strong>Text</strong> element's input field and input fields <strong>Page Name</strong> and <strong>Description</strong>. An example of the <strong>Localization</strong> menu is represented in the figure below.</p>
+<figure>
+    <img src="../images/local.png" alt="Localization menu">
+    <figcaption><b>Figure 1.</b> Localization menu</figcaption>
+</figure>
+
+<p>Each Text field of the menu corresponds with a Portal (HMI View) locale which you can choose in <a href="..2-Portal/Portal_user_profile.md">Portal user profile</a>.  </p>
+<p>Type translations in the <strong>Text</strong> column of the menu. Choose the language in <a href="..2-Portal/Portal_user_profile.md">Portal user profile</a> to display the translated text.</p>
+<h2 id="translation-table">Translation table<a class="headerlink" href="#translation-table" title="Permanent link">#</a></h2>
+<p>The <strong>Translation</strong> table is a table with special keys that hold translations of the text into different languages. These keys are used as the <code>i18n</code> function arguments. To open the <strong>Translation</strong> table, click the <strong>Options</strong> button in the page editor top panel's right, and go to <strong>Localization &gt; Add translation</strong>. You can also get to the table via a shortcut: press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>, and open it. See an example of the <strong>Translation</strong> table in the figure below. </p>
+<figure>
+    <img src="../images/translation.png" alt="Translation table">
+    <figcaption><b>Figure 2.</b> Translation table</figcaption>
+</figure>
+
+<h2 id="the-i18n-function">The i18n function<a class="headerlink" href="#the-i18n-function" title="Permanent link">#</a></h2>
+<p>The <strong>i18n</strong> function is another way to translate elements into different languages. You can call <strong>i18n</strong> from the <strong>Expression</strong> editor. The function has the following syntax: </p>
+<pre><code>i18n (&quot;key&quot;, &quot;locale&quot;)
+</code></pre>
+
+<p>The argument <code>key</code> defines the key from the <strong>Translation</strong> table or one of the <strong>Text</strong> elements with translation configured via the <strong>Localization</strong> menu. The argument <code>locale</code> defines the language to be displayed. If not set, this argument corresponds with the current Portal locale.</p>
+<p>You can use an interactive help tool when typing the <code>key</code> argument. Type quotation marks and place the cursor between them, then press <kbd>Ctrl</kbd> + <kbd>Space</kbd> combination to open the list of available keys. As you can see in the figure below, there are custom key names configured in the <strong>Translation</strong> table and the keys generated by the system.</p>
+<figure>
+    <img src="../images/keys-locale.png" alt="List of keys">
+    <figcaption><b>Figure 3.</b> List of keys</figcaption>
+</figure>
+
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../page_ed/">Page editor</a></strong><br>
+This article shortly tells about pages, page editor, and its interface. </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../emv/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../emv/" class="btn btn-xs btn-link">
+        EnergyMachines™ Verification function
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../page_el/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../page_el/" class="btn btn-xs btn-link">
+        Page Objects
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

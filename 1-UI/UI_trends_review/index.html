@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Trends - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "About the Trends section", url: "#_top", children: [
+              {title: "Trends section overview", url: "#trends-section-overview" },
+              {title: "History viewer", url: "#history-viewer" },
+              {title: "Sharing trends", url: "#sharing-trends" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_events/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_events/" class="btn btn-xs btn-link">
+        Logs
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_alarms_swatchers/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_alarms_swatchers/" class="btn btn-xs btn-link">
+        Signal watchers
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="about-the-trends-section">About the Trends section<a class="headerlink" href="#about-the-trends-section" title="Permanent link">#</a></h1>
+<p>General information about the Trends section</p>
+<h2 id="trends-section-overview">Trends section overview<a class="headerlink" href="#trends-section-overview" title="Permanent link">#</a></h2>
+<p>You can track tags in real-time and observe the history in the Trends section. Here you can create a <a href="../UI_trends/">trend group</a> to monitor values.</p>
+<p>The section navigation menu is on the left side, and the trend viewer is on the right.</p>
+<figure>
+    <img src="../images/Trends_view.png" alt="Trends_view.png">
+    <figcaption><b>Figure 1.</b> Trends section</figcaption>
+</figure>
+
+<p>Click on a trend to open it. A trend can contain one or several tags. Often tags have similar names, so to avoid confusion, their names in a trend start with the name of a closest to the root directory folder. The following figure shows an example. </p>
+<figure>
+    <img src="../images/Trend_sec_structure.png" alt="Trend_sec_structure.png">
+    <figcaption><b>Figure 2.</b> Tag naming in a trend group</figcaption>
+</figure>
+
+<p>There are two types of trends: personal and global. The first ones are only available to a user who created them. The seconds are public, and other users of ControlMachines™ HMI View can observe them. Personal trends have the following icons: <img alt="trend_personal.png" src="../images/trend_personal.png" />. And global trends have these: <img alt="trend_global.png" src="../images/trend_global.png" />. </p>
+<p>Depending on tag properties, you can switch between two modes:</p>
+<ol>
+<li>REAL TIME</li>
+<li>HISTORY</li>
+</ol>
+<p>In the REAL TIME mode, users can see moving graphs that display values of one or several tags at the moment of observation.</p>
+<p>HISTORY mode displays retrospective data on different time scales. Data in the history mode can be shown both as a graph and a table. Users can observe history for hours, days, weeks, months, years and the whole time. Also, it is possible to adjust the exact period to display history.</p>
+<h2 id="history-viewer">History viewer<a class="headerlink" href="#history-viewer" title="Permanent link">#</a></h2>
+<p>History viewer has several instruments to adjust the display of a trend group.</p>
+<p>You can switch from the graph view to the table view using respective buttons <img alt="Trends_graph.png" src="../images/Trends_graph.png" /><img alt="Trends_graph_dots.png" src="../images/Trends_graph_dots.png" /><img alt="Trends_table.png" src="../images/Trends_table.png" /> in the trend viewer's header. These buttons represent three views that a trend group can have: </p>
+<ol>
+<li>Graph View</li>
+<li>Scatter Chart View</li>
+<li>Table View</li>
+</ol>
+<figure>
+    <img src="../images/Trends_table_view1.png" alt="Trends_table_view1.png">
+    <figcaption><b>Figure 3.</b> Table view</figcaption>
+</figure>
+
+<h3 id="time-controls-menu">Time controls menu<a class="headerlink" href="#time-controls-menu" title="Permanent link">#</a></h3>
+<p>The <strong>Time controls</strong> menu allows adjusting of historical data periods. It is possible to display tag values for an hour, a day, a week, a month, a year or the whole period of tag's functioning. Also, you can set a custom period of data display. See the <strong>Time controls</strong> menu in the following figure.</p>
+<figure>
+    <img src="../images/Trends_time_scale.png" alt="Trends_time_scale.png">
+    <figcaption><b>Figure 4.</b> Time controls menu</figcaption>
+</figure>
+
+<p>Compare tag values for the same period from another year. Click the <strong>Choose years to compare</strong> button <img alt="" src="../images/compare-years.png" /> and select available for comparison tags. You can have the comparison displayed in the <strong>Graph View</strong> and <strong>Table View</strong>. The data from a different year is shown as a separate graph or column depending on the view.</p>
+<h3 id="customizing-the-data-display">Customizing the data display<a class="headerlink" href="#customizing-the-data-display" title="Permanent link">#</a></h3>
+<p>A toolbar on top of the history viewer contains instruments for customising the data display.</p>
+<figure>
+    <img src="../images/Trends_toolbar.png" alt="Trends_toolbar.png">
+    <figcaption><b>Figure 5.</b> History viewer toolbar</figcaption>
+</figure>
+
+<p>You can choose how to display charts. There are two modes: </p>
+<ol>
+<li>With interpolation </li>
+<li>Without interpolation</li>
+</ol>
+<p>Find the <strong>Interpolation</strong> button <img alt="" src="../images/interon.png" />/<img alt="" src="../images/interoff.png" /> in the toolbar to switch between the modes. </p>
+<p>By clicking on the <strong>Show Min/Max</strong> button <img alt="Trends_max_min.png" src="../images/Trends_max_min.png" />, you can turn on and off the Min/Max mode. When activated, this mode displays the lowest and the highest of values by painting an area around the aggregated value line. You can see an example in the figure below.</p>
+<p><figure>
+    <img src="../images/Trends_min-max-events.png" alt="Trends_min-max-events.png">
+    <figcaption><b>Figure 6.</b> Min/Max mode with displayed events</figcaption>
+</figure></p>
+<p>This mode is available when tag values grouped by a period. In this case, the graph shows aggregated data and the painted area shows the range of values that took place.</p>
+<p>The <strong>Manage Axes</strong> button <img alt="Trends_manage_axes_button.png" src="../images/Trends_manage_axes_button.png" /> opens a menu for adjusting axes.</p>
+<p>You can find the <strong>Show/Hide Events</strong> button <img alt="Trends_show_alarms.png" src="../images/Trends_show_alarms.png" />/<img alt="Trends_hide_alarms.png" src="../images/Trends_hide_alarms.png" /> in the viewer's toolbar. Click this button to show events that occurred with tags from the trend group. You can see the following events:</p>
+<ul>
+<li>Alarm activation</li>
+<li>Alarm deactivation</li>
+<li>Tag value update</li>
+</ul>
+<p>History navigation menu helps to move on the time axis in the graph view.</p>
+<figure>
+    <img src="../images/Trends_history_nav.png" alt="Trends_history_nav.png">
+    <figcaption><b>Figure 7.</b> History navigation menu</figcaption>
+</figure>
+
+<h2 id="sharing-trends">Sharing trends<a class="headerlink" href="#sharing-trends" title="Permanent link">#</a></h2>
+<p>Click <strong>Share Trend Group</strong> <img alt="share button" src="../images/share.png" /> in the toolbar. In the <strong>Share Trend Group</strong> menu, set the period during which the link would be active and click <strong>Create Link</strong>. </p>
+<figure>
+    <img src="../images/share-trend.png" alt="Share Trend Group menu.png">
+    <figcaption><b>Figure 8.</b> Share Trend Group menu</figcaption>
+</figure>
+
+<p>Copy the link in the <strong>Shared Link</strong> dialog and send it to people you need.</p>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../UI_main/">ControlMachines™ HMI View</a></strong><br>
+This article observes ControlMachines™ HMI View, here you can read about its structure and common elements.</li>
+</ul>
+<p><strong>Related article:</strong></p>
+<ul>
+<li><strong><a href="../UI_trends/">Creating a trend group</a></strong><br />
+This task shows how to create a trend group</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_events/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_events/" class="btn btn-xs btn-link">
+        Logs
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_alarms_swatchers/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_alarms_swatchers/" class="btn btn-xs btn-link">
+        Signal watchers
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
