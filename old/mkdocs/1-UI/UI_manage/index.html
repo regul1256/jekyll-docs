@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Managing tags - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Managing tags", url: "#_top", children: [
+              {title: "Manage Tags menu", url: "#manage-tags-menu" },
+              {title: "Tag lookup menu", url: "#tag-lookup-menu" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_pages_curve-ed/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_pages_curve-ed/" class="btn btn-xs btn-link">
+        Regulator curve editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_share-page/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_share-page/" class="btn btn-xs btn-link">
+        Sharing pages
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="managing-tags">Managing tags<a class="headerlink" href="#managing-tags" title="Permanent link">#</a></h1>
+<p>In this article, what is the <strong>Manage tags</strong> menu and how to view tag history and open the regulator tag editor. Also, you can find information about observing and changing tag values using the <strong>Tag lookup</strong> instrument.</p>
+<h2 id="manage-tags-menu">Manage Tags menu<a class="headerlink" href="#manage-tags-menu" title="Permanent link">#</a></h2>
+<p>Click the <strong>Manage Tags Values</strong> button <img alt="ManageTags_button.png" src="../images/ManageTags_button.png" /> in the <a href="../UI_toolbar/"><strong>Toolbar</strong></a> to open the <strong>Manage Tags</strong> menu.</p>
+<figure>
+    <img src="../images/manage.png" alt="Manage Tags menu">
+    <figcaption><b>Figure 1.</b> Manage Tags menu</figcaption>
+</figure>
+
+<p>In this menu, you can:</p>
+<ul>
+<li>Set tag values</li>
+<li>Open tag history</li>
+<li>Open the curve editor</li>
+</ul>
+<p>Type values in an input field to change the value of a numeric writable tag. To change the value of a boolean writable tag, click a switch button. </p>
+<p>Click the <strong>View History</strong> button <img alt="View_history.png" src="../images/View_history.png" /> to open the tag's <a href="../UI_trends_review/#Trends_modes">History</a> mode of Trends section. To open the <a href="../UI_pages_curve-ed/">Regulator curve editor</a>, click the <strong>Edit regulator</strong> button <img alt="EditRegulator_icon.png" src="../images/EditRegulator_icon.png" />.</p>
+<h2 id="tag-lookup-menu">Tag lookup menu<a class="headerlink" href="#tag-lookup-menu" title="Permanent link">#</a></h2>
+<p>The <strong>Tag lookup</strong> menu allows you to find and manage all available tags. Click the <strong>Tag lookup</strong> icon <img alt="" src="../images/change_value.png" /> in the <strong>Toolbar</strong> to open the menu. In the following figure, you can see the default view of <strong>Tag lookup</strong>.</p>
+<figure>
+    <img src="../images/lookup.png" alt="Tag lookup menu">
+    <figcaption><b>Figure 2.</b> Tag lookup menu</figcaption>
+</figure>
+
+<p>There is a drop-down list of tags from where you can choose the necessary tag. You can navigate through the folders and choose the necessary tag. It is possible to pick multiple tags. </p>
+<p>The values of writable tags can be edited directly in this menu. Type the value in the input field and press <code>Enter</code>. If a tag is non-writable, the input field is grey. </p>
+<figure>
+    <img src="../images/Choose_tags_menu2.png" alt="Non-writable tags in the Tag lookup menu">
+    <figcaption><b>Figure 3.</b> Non-writable tags in the Tag lookup menu</figcaption>
+</figure>
+
+<p>Another way to choose tags is to pick them from pages. Click the <strong>Choose From Pages</strong> icon <img alt="" src="../images/choose_from_pages.png" /> to switch to the page list view. The following figure shows the page list in the box. </p>
+<figure>
+    <img src="../images/lookup2.png" alt="The page list view">
+    <figcaption><b>Figure 4.</b>Tag lookup menu, Choose From Pages list</figcaption>
+</figure>
+
+<p>Click the necessary page, pick the tags, and click <strong>Next</strong>. You can either pick tags from the page, or from the list on the left. </p>
+<figure>
+    <img src="../images/page_pick_tags.png" alt="A page with tags">
+    <figcaption><b>Figure 5.</b> Picking tags from a page</figcaption>
+</figure>
+
+<p>Change values of tags in the following dialog menu and click <strong>OK</strong>. </p>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../UI_pages/">Pages</a></strong><br>
+In this article, you can find brief information about pages, how to add a page to Favorites and how to rename it.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_pages_curve-ed/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_pages_curve-ed/" class="btn btn-xs btn-link">
+        Regulator curve editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_share-page/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_share-page/" class="btn btn-xs btn-link">
+        Sharing pages
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

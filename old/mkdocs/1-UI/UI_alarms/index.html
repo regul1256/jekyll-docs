@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Section overview - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Alarms", url: "#_top", children: [
+              {title: "Briefly about alarms", url: "#briefly-about-alarms" },
+              {title: "Alarms section overview", url: "#alarms-section-overview" },
+              {title: "Acknowledge alarm", url: "#acknowledge-alarm" },
+              {title: "Shelve and monitor alarm", url: "#shelve-and-monitor-alarm" },
+              {title: "Alarms statistics", url: "#alarms-statistics" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_alarms_system/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_alarms_system/" class="btn btn-xs btn-link">
+        System alarms
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_time_replay/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_time_replay/" class="btn btn-xs btn-link">
+        History Replay mode
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="alarms">Alarms<a class="headerlink" href="#alarms" title="Permanent link">#</a></h1>
+<p>In this article: alarms and what they do. You'll find out what does "acknowledge alarm" mean and what shelved and monitored alarms are.</p>
+<h2 id="briefly-about-alarms">Briefly about alarms<a class="headerlink" href="#briefly-about-alarms" title="Permanent link">#</a></h2>
+<p>Alarms inform you of critical conditions and situations that require human attention or intervention.</p>
+<p>Alarms are usually associated with tags. When a tag or several tags register a critical condition, an associated alarm becomes active. There are also <a href="../UI_alarms_system/">system alarms</a>.</p>
+<h2 id="alarms-section-overview">Alarms section overview<a class="headerlink" href="#alarms-section-overview" title="Permanent link">#</a></h2>
+<p>The <strong>Alarms</strong> section allows users to monitor and manage alarms and displays their statistics. On the figure below, you can see one of the Alarms section's tabs:</p>
+<figure>
+    <img src="../images/alarms.png" alt="Alarms section view">
+    <figcaption><b>Figure 1.</b> Alarms section view</figcaption>
+</figure>
+
+<p>The section structure contains available to you alarms including those not active at the moment.</p>
+<p>In the content area you can see those of alarms that require your attention. The area consists of four tabs:</p>
+<ol>
+<li>All</li>
+<li>Shelved</li>
+<li>Acknowledged</li>
+<li>Monitored</li>
+</ol>
+<p>You can switch between them on the panel above.</p>
+<p>The view's table contains information such information as:</p>
+<ul>
+<li>Activation time</li>
+<li>Associated tag's name</li>
+<li>Information message (optional)</li>
+<li>State of the alarm</li>
+<li>Alarm priority</li>
+<li>Alarm category</li>
+</ul>
+<p>Some of the alarms may have an icon <img alt="alarm-link.png" src="../images/alarm-link.png" /> in the Name column. Clicking this icon redirects you to the <a href="../UI_time_replay/">History Replay</a> mode of the page that is associated with the alarm. The replay of historical data starts one minute before the moment of alarm occurrence and ends at the current moment. Also, in the last column, you can choose one of the available operations:</p>
+<ul>
+<li>Acknowledge <img alt="" src="../images/Acknowledged.png" /></li>
+<li>Shelve <img alt="Shelve.png" src="../images/Shelve.png" /> and Unshelve <img alt="Unshelve.png" src="../images/Unshelve.png" /> </li>
+<li>Start Monitoring <img alt="Monitoring.png" src="../images/Monitoring.png" /></li>
+<li>Manage Comment <img alt="Comment.png" src="../images/Comment.png" /> </li>
+</ul>
+<p>The HMI View signals about alarm activation in several ways:</p>
+<ol>
+<li>Colour. The red colour shows that the alarm is active.</li>
+<li>If there is at least one active alarm, the counter <img alt="AlarmCounter.png" src="../images/AlarmCounter.png" /> in the interface header becomes red and indicates the total number of unacknowledged alarms.</li>
+<li>Also, the animated badge <img alt="AlarmBadge.png" src="../images/AlarmBadge.png" /> appears on the section icon on the left. This badge is red if there exists at least one active alarm. Similarly to the counter, the badge indicates unacknowledged alarms.</li>
+</ol>
+<h2 id="acknowledge-alarm">Acknowledge alarm<a class="headerlink" href="#acknowledge-alarm" title="Permanent link">#</a></h2>
+<p>The action <em>acknowledge</em> means that the user confirmed alarm notification.</p>
+<p>Let's look at what happens when you acknowledge the alarm:</p>
+<ol>
+<li>If the alarm condition still remains, then notification stays visible in the table. The following scenario occurs:<ul>
+<li>The alarm changes its colour to pink</li>
+<li>The number of alarms in the interface header's counter decreases by one. The same thing happens with the badge on the section’s icon</li>
+<li>The alarm appears in the <strong>Acknowledged</strong> tab</li>
+</ul>
+</li>
+<li>As soon as the alarm condition is no longer active, the alarm disappears from the table tabs <strong>All</strong> and <strong>Acknowledged</strong>. The number of alarms in the interface header's counter decreases by one. The same thing happens with the badge on the section’s icon.</li>
+</ol>
+<h2 id="shelve-and-monitor-alarm">Shelve and monitor alarm<a class="headerlink" href="#shelve-and-monitor-alarm" title="Permanent link">#</a></h2>
+<p>You can postpone the alarm by clicking the <strong>Shelve</strong> button. The context menu allows you to set necessary amount of days and hours. The postponed alarm appears in the <strong>Shelved</strong> tab.</p>
+<p>At the occurrence of the alarm, you can add it to the <strong>Monitored</strong> list by clicking the respective button. The <strong>Monitored</strong> list displays different sorts of alarms active and inactive, acknowledged and unacknowledged, shelved and unshelved.</p>
+<figure>
+    <img src="../images/alarm-colours.png" alt="Monitored alarms">
+    <figcaption><b>Figure 2.</b> Different alarm colours</figcaption>
+</figure>
+
+<p>The image shows all possible alarm states:</p>
+<ul>
+<li>Red alarm is active and unacknowledged</li>
+<li>Pink alarm is active and acknowledged</li>
+<li>Blue alarm is shelved</li>
+<li>Green alarm is inactive and unacknowledged</li>
+<li>Pale yellow alarm is inactive and acknowledged</li>
+</ul>
+<h2 id="alarms-statistics">Alarms statistics<a class="headerlink" href="#alarms-statistics" title="Permanent link">#</a></h2>
+<p>Cloud version of the interface can display alarms statistics. Click the <strong>Statistics</strong> button on top of the section structure to observe consolidated data about alarms.</p>
+<figure>
+    <img src="../images/alarms-stat.png" alt="Statistics of Alarms">
+    <figcaption><b>Figure 3.</b> Alarm statistics</figcaption>
+</figure>
+
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../UI_main/">ControlMachines™ HMI View</a></strong><br>
+This article observes ControlMachines™ HMI View, here you can read about its structure and common elements.</li>
+</ul>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><strong><a href="../UI_alarms_swatchers/">Signal watchers</a></strong><br />
+Here you can read about signal watchers and their work principle. Also, the article tells about the parameters of signal watchers.</li>
+<li><strong><a href="../UI_alarms_system/">System alarms</a></strong><br />
+Briefly about system alarms.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../UI_alarms_system/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../UI_alarms_system/" class="btn btn-xs btn-link">
+        System alarms
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../UI_time_replay/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../UI_time_replay/" class="btn btn-xs btn-link">
+        History Replay mode
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

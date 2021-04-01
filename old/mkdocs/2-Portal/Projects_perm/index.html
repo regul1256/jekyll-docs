@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Portal user Permissions - ControlMachines™ HMI user guide</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "User roles and permissions in Portal", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../Portal_alarms/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../Portal_alarms/" class="btn btn-xs btn-link">
+        Monitoring alarms
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../stats/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../stats/" class="btn btn-xs btn-link">
+        View stats
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="user-roles-and-permissions-in-portal">User roles and permissions in Portal<a class="headerlink" href="#user-roles-and-permissions-in-portal" title="Permanent link">#</a></h1>
+<p>This article is about project permissions tab</p>
+<p>All the roles are managed by the administrator of the Portal. Any Portal project can have users with the following roles:</p>
+<ul>
+<li>admin</li>
+<li>manager</li>
+<li>operator</li>
+<li>user</li>
+<li>viewer</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contact your Portal administrator to get information about your user role.</p>
+</div>
+<p>The following table illustrates what users with different roles can do:</p>
+<table>
+    <caption><b>Table 1.</b> Portal roles and permissions</caption>
+    <thead>
+        <tr>
+            <th style="text-align:center">Permission</th>
+            <th style="text-align:center">Admin</th>
+            <th style="text-align:center">Manager</th>
+            <th style="text-align:center">Viewer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Edit general project information</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Edit KPI table</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Edit the Mobile tab of a project</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Edit the Settings tab of a project</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>View pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Manage permissions for pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Import pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Export pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Create pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Edit pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Rename pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Delete pages</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <!--<tr>
+            <td>Download pages</td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+        </tr>-->
+        <tr>
+            <td>View documents</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Manage permissions for documents</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Import documents</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Export documents</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Rename documents</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Delete documents</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>View devices and tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Import devices</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Export devices</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Create devices</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Edit devices</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Rename devices</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Delete devices</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Manage permissions for tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Import tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Export tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        <tr>
+            <td>Create tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Edit tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Rename tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Delete tags</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Copy tag IDs</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>View alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Manage permissions for alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Export alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Import alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Create alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+         <tr>
+            <td>Edit alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr><tr>
+            <td>Rename alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Delete alarms</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+        <tr>
+            <td>Copy alarm IDs</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Create, edit, rename and delete reports</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>Edit personal profile</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+        <tr>
+            <td>View project preferences</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+        </tr>
+         <tr>
+            <td>Edit project preferences</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">+</td>
+            <td style="text-align:center">-</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Users with <em>admin</em> and <em>manager</em> roles have access to IDE functionality. Users with <em>viewer</em> role can also be able to work in IDE. Portal administrator can grant permission to such users.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>It is important to notice that mentioned above roles can only see a predefined set of pages and documents. The administrator of the Portal configures which pages are going to be available to one or another user.</p>
+</div>
+<hr />
+<p><strong>Parent article:</strong> </p>
+<ul>
+<li><strong><a href="../Portal_projects/">Portal Projects</a></strong><br>
+Brief information about the Projects section.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../Portal_alarms/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../Portal_alarms/" class="btn btn-xs btn-link">
+        Monitoring alarms
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../stats/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../stats/" class="btn btn-xs btn-link">
+        View stats
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
